@@ -2,4 +2,5 @@ notre-contexte.txt
 pourquoi-changer.txt
 le-constat.txt
 une-nouvelle-approche.txt
+la-représentation-du-DevOps.txt
 metrologie.txt
