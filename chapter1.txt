@@ -1,3 +1,12 @@
-# Chapter 1 (Example Chapter)
+# Notre contexte
 
-I was born in the year 1632, in the city of York, of a good family...
+## Le monde change, la société change
+Aujourd'hui lorsqu'on veut choisir une banque, une assurance, un opérateur, ou tout autre fournisseur de services, on surfe sur son smartphone ou sur internet. En fait, on choisit surtout une application. 
+Les jeunes générations ne vont au coin de la rue qu'après s'être connectés.
+
+## Qu'est-ce donc que ces services ?
+Tous les services de stockage, de cloud, vos photos, vos vidéos, de partage, de consultation everywhere, de messagerie, d'agenda, de carnet d'adresse, et autres éléments de votre vie privée.
+
+Tous les services qui motivent ces alertes smartphones dont on ne peut plus se passer, que ce soit de l'actualité, le trafic routier ou des transports en commun, la proximité d'un ami ou de promotions, ou encore des tamagochis qui crient famine.
+
+Plus largement, la musique à la demande, la vidéo à la demande (VOD), les jeux (qu'on y aligne des bonbons ou non), la consultation des horaires ou la réservation de billet de cinéma, de train, la banque en ligne, la recherche d'appartement, la surveillance de santé, le coach de sport, les achats à prix cassés, aux enchères ou d'occasions et les inévitables viraux réseaux sociaux.
