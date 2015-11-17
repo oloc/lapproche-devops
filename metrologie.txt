@@ -1,1 +1,15 @@
 # Métrologie
+
+Introduction
+Feedback instruments
+
+Tout mesurer tout collecter
+Générer, collecter, analyser
+
+Evénements
+Equipiers (recrutement, contexte, on-boarding)
+Release (prod et hors prod)
+Changement de machine (reboot)
+Changement de configuration
+
+Qualité / Fiabilité / Vélocité
