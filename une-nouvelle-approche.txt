@@ -1,3 +1,27 @@
 # Une nouvelle approche
 
-Write here...
+## Un mouvement culturel
+Le mouvement DevOps est **culturel**.
+Il promeut une stratégie organisationnelle de **rapprochement** entre les équipes.
+Il recommande un ensemble de **bonnes pratiques** ouvrant à l'industrialisation.
+Il propose de nouvelles méthodes en privilégiant la **motivation** de chacun et la **coopération** de tous.
+
+Le terme DevOps a été inventé :
+- Par Patrick Debois (Belge)
+- En octobre 2009
+
+## Ce que le DevOps n'est pas
+Beaucoup d'entreprises annoncent travailler déjà en bonne collaboration. Alors, qu'apporte le DevOps ? Comme on a pu le voir précédemment la coopération entre les équipes de développement, et les opérationnels peut se parfaire.
+Néanmoins, de placer les Dev et les Ops dans le même open-space ne suffit pas car le DevOps n'est pas uniquement une meilleure collaboration.
+
+La plus commune idée reçue est que le DevOps est de l'outillage.
+Trop souvent on peut constater les déceptions de certaines entreprises ayant mis en place différents outils sans un apport majeur. Certes un petit gain est constaté, mais pas dans l'ampleur que laisse supposer les éloges à l'endroit du DevOps.
+Le DevOps ne s'arrête pas à de l'automatisation et/ou de l'industrialisation. Ce n'est pas une brochette ou une bonne adéquation d'outils.
+
+L'outillage est une conséquence et non l'essence de la démarche DevOps.
+
+
+> A Retenir :
+> Le DevOps n'est pas uniquement une meilleure collaboration.
+> Il ne faut pas s'arrêter à l'outillage qui n'est qu'une conséquence de la démarche DevOps.
+
