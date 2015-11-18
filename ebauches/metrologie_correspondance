@@ -1,0 +1,95 @@
+**** Prise de notes - correspondance ***
+
+Effectivement, la terminologie est flou et parfois confuse. Pour ma part mon approche est différente de celle que tu énumères :
+
+    Monitoring est le mauvais 'anglicisme de Supervision. A quelques iotas près, certains contestant l'incorporation de l'état des traitements.
+    La métrologie est la prise de mesures et de leur analyse
+
+Ceci dit, l'approche monitoring = supervision + métro', pourquoi pas. Sauf que tel qu'à l'hôpital, le monitoring, on se fout de la valeur en soi, on attend juste que ça bip lorsque ça sort du scope.
+Dans la suite, je pars du principe que monitoring = supervision, parce que de faire la distinction de toute façon, ça ne change rien sur le concept.
+
+La grosse différence entre les deux est que :
+
+    le monitoring est la surveillance d'un état ou d'un seuil. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée)
+    La métrologie remonte des mesures. Le résultat appelle des analyses pour vérifier la bonne santé générale de tout ou partie de son SI
+
+Un exemple vaut mieux que deux définitions tu l'auras. Imaginons un espace disque dédié pour la réception de fichiers à intégrer. Ils ont une rétention définie pour se caler avec les besoins de reprise et les sauvegardes.
+Dans un tel cas, un monitoring de contrôle de l'espace disque sera mis en place avec des seuils de taux d'occupation, par exemple de 80% à 94% l'alerte sera un warning, pour anticiper une action de fond, et de 95 à 100% un KO pour une action immédiate.
+Comme nous l'avons déjà dit, dans la cadre la mise en place de la métrologie, on abordera le sujet différemment. Aucun seuil, mais des mesures à effectuer. Et si on retrouvera l'espace disque, on retrouvera aussi l'activité disque (I/O, répartitions sur le raid, etc.), mais aussi la taille des fichiers reçus, leur date/heure d'arrivée. Et c'est l'énorme différence !
+
+Cette différence n'est pas seulement sur la forme, mais c'est aussi sur le fond. En mesurant l'évolution de la taille de mes fichiers, non seulement je vais anticiper mon occupation disque, mais je vais aussi pouvoir corréler cette mesure avec la mesure du temps d'intégration afin de théoriser sur cette relation de cause à effet taille de fichiers / temps de traitement. Je vais pouvoir mettre en relation, ma charge CPU, mémoire, les temps de réponse, la charge réseau, etc. L'ensemble de ces mesures me permettent de mieux comprendre comment évolue la partie de mon SI en charge de l'intégration de ces fichiers.
+
+L'autre point de différence est dans la perception. Avec le monitoring, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe).
+
+
+Pour terminer, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer du monitoring au profit de la métrologie, or ce n'est pas le cas.
+Le but avoué du monitoring est de s'aider lors des interventions et pour cela on tente de surveiller bien des aspects de sa production dans les conséquences et non dans les causes. C'est même un tort commun que j'ai pu diagnostiqué chez mes clients. Et on pourrait donc réduire le monitoring en supprimant le superflu (ceinture, bretelles, parachute) en privilégiant bien plus la prévention, en s'attachant aux causes. Et cette analyse préventive est effectivement, un des objectifs de la métrologie.
+Effectivement, on pourrait réduire sa supervision au profit d'une meilleure métrologie, mais on ne pourrait la supprimer. Ne serait-ce que la prise en compte d'un aléa, un matériel qui crame, une réception de fichier d'une taille exorbitante, un déni de service, etc.
+
+Si la position du curseur entre monitoring et métrologie devrait (pour une amélioration de la qualité de service) être revu, les deux sont complémentaires.
+
+
+J'ai effectivement digéré ton retour, mais je n'ai pas encore fini de les enrichir avec les infos récoltées sur le net.
+
+Ce que je retiens pour l'instant (corrige moi si je m'égare) :
+- il n'y a pas de terminologie figée --> à chacun de définir de quoi il parle. Pour ma part : supervision = surveillance en temps réel; métrologie = analyse à posteriori
+- l'objectif principal de l'activité de monitoring / supervision / métrologie : améliorer la qualité de service
+- deux voies pour ce faire :
+1 - réactivité avec la supervision --> surveillance de type binaire / ternaire permettant de déclencher des actions à court ou moyen terme. Exemple : court terme --> alerte = application qui ne répond plus; actin = relancer l'application; moyen terme --> alerte = taux d'occupation du disque dur d'un serveur > 80%; action = planifier l'ajout de disque sur une baie. On peut faire le parallèle avec une médecine d'urgence dont l'objeccif est de soigner les symptômes les plus graves, sans forcément se pencher sur leurs causes
+2 - pro activité avec la métrologie --> surveillance des tendances afin d'anticiper les évolutions / correctifs à mettre en oeuvre à moyen et long terme. Exemple --> analyse de l'évolution du taux d'occupation des liens réseau sur une année glissante afin de déterminer s'il faut prévoir la refonte du réseau. Il s'agit ici d'une médecine de fond qui a pour objectif de soigner les causes. Dans l'idéal, ces soins seront pratiqués avant même que les symptômes apparaissent.
+- la métrologie étant pro active, plus elle sera efficace, plus la supervision pourra être "light". Cette dernière doit néanmoins être maintenue, ne serait-ce que pour faire face aux pannes matérielles
+
+Il me reste maintenant à finir de synthétiser tout ce que j'ai pu lire sur la mise en musique :
+- outils disponibles
+- problématiques rencontrées
+
+Je reviens vers toi dès que j'ai des éléments plus concrets sur ces aspects.
+
+Déjà, un abus de langage est à balayer : une mesure, la prise de mesure et la valeur de la mesure. Une mesure c'est par exemple, la mesure de la longueur de ton meuble, la mesure de ton espace disque, la valeur de cette mesure est 80 cm ou 5 Go. On confond souvent la mesure qui est la qualité, et la valeur de la mesure qui est la quantité. La prise de mesure est l'action de relever la valeur d'une mesure.
+
+Par la suite quand je dis "une seule mesure", c'est par exemple "la longueur de mon meuble", ce qui ne veut pas dire que je ne vais procéder qu'à une seule prise de mesure. D'ailleurs, je l'ai pris trois fois, 80cm, 81cm et 80cm. Une seule mesure "longueur du meuble", avec 3 prises de mesure qui me fournissent 2 valeurs de mesure (80 et 81 cm).
+
+
+Quant à la métrologie, un des aspects importants pour moi dont tu ne parles pas est la confrontation des mesures.
+Dans ton explication, j'ai l'impression que tu considères la métrologie sur une seule mesure (l'espace de ce disque-là). Ce qu'il faut comprendre dans la métrologie c'est que c'est aussi la confrontation des mesures entre elles. Par exemple : Ce disque-là par rapport à l'évolution de la taille de ces fichiers-là. La charge CPU par rapport à l'occupation disque (corrélation liée par la consommation mémoire, et le swap).
+
+Contrôler la consommation mémoire, c'est bien mais la mettre en relation avec la CPU, les I/O disques, etc. permet de mieux juger son application.
+Peut-être que la consommation mémoire croit très vite quand ta CPU est à 100%, ou encore quand tes disques sont déjà à pleine bourre et ne peuvent pas écrire plus vite. Dans un cas, l'action de fond sera d'ajouter de la CPU ou de revoir le multi-thread de ton application, dans l'autre, de revoir ton Raid Disque, les perf' de ta baie, ou d'envisager des SSD. Et aucunement d'ajouter de la mémoire.
+
+Si je devais réaffirmer la différence :
+La supervision concerne les états ou les seuils sur une seule mesure, peu importe la valeur exacte.
+La métrologie est la confrontation des valeurs de plusieurs mesures sur des prises de mesures effectuées dans la même tranche de temps.
+
+
+Prenons un exemple hors contexte, la supervision pourrait être : Est-ce que je respecte la limitation de vitesse ? Oui ou Non. Et ce sans connaitre ma vitesse.
+La métrologie serait sur les 5 dernières secondes, Quelle est ma vitesse ? Mon accélération ? Ma consommation de carburant ? Le poids totale de la voiture ? Et je ne serais peut-être pas capable de savoir si je respecte la limitation de vitesse (il faudrait que je connaisse cette limitation), par contre je peux déterminer si ma consommation est optimale, l'évolution de mon accélération au regard du poids du véhicule, et pourquoi pas déterminer le mode de conduite (et d'usage de l'accélération) à adopter en fonction de ma consommation (plus je consomme, plus la voiture est légère).
+
+Un exemple dans le contexte :
+La supervision de l'espace disque : Dépasse-t-il les 80 % ? Oui ou non ?
+La métrologie : Mon espace disque totale mesure 1To et son occupation actuelle est de 750 Go. Je reçois quotidiennement des fichiers de 1Go, je serais donc en rupture prévisionnelle dans 250 jours.
+Au bout de 100 jours, mon occupation est de 850 Go, mais je ne reçois plus de fichiers, plus aucune rupture prévisionnelle.
+
+
+Dans deux heures j'ai une présentation à effectuer et je n'ai pas encore fini mes supports... je coupe court : Que penses-tu de ces précisions ? 
+
+
+
+D'après ton expérience, existe-t-il beaucoup de sociétés qui ont un poste de métrologue dédié ? Dans le cas contraire, qui s'occupe généralement de cette fonction ?
+Et quel est le périmètre de ce poste ? S'agit-il uniquement de la partie technique : déploiement et maintenance de la solution ? Cela inclut-il également la partie reporting ? Et jusqu'où va se reporting (cf ma quesrtion dans mon message ci-dessous) ?
+
+Je n'ai pas oublié ta question qui est pertinente. Pour y répondre rapidement.
+
+Il n'existe pas de poste de Métrologue dédié. Et ce ne doit pas être.
+La couche matériel doit être géré par les "infras", les outils doivent être administrés par les équipes transverses, outillages, ou bien sous la responsabilité une équipe définie (la prod', les QA, les infras, peu importe pour peu que ce soit su et non contesté). L'usage des outils et la définition des dashboards est à la main de TOUTES les équipes.
+
+Les Best Practicies que je préconise sont canoniques (admis comme les meilleurs par tous).
+Il faut que les dashboards mélangent métier et techniques, l'un influençant l'autre ou déclenchant le chaos sur l'autre ;-).
+
+Tu ne peux pas tout mettre sur tes dashboards, il faut donc séparer tes pages par activités métier dans lesquelles tu as des courbes fonctionnelles et techniques.
+Exemple de dashboards : banque de détails, Agences, Trades, Crédit, dans lesquels tu auras les mesures de CPU/Mem/JVM et quelques valeurs métiers qui ne concerne QUE l'activité. Et même si tu as des serveurs mutualisés, tu auras des données exposées autant de fois qu'il le faut. Et dans ce cas, tu peux matcher dans l'autre sens, Un serveur d'application mutualisé avec ses infos techniques et toutes les valeurs métiers adossées.
+
+L'idée est d'être réactifs d'un sens comme dans un autre. De part le métier ou de part l'IT.
+
+Dans une logique de continuous Delivery, tu dois aussi avoir la même métrologie sur chaque environnement, auquel tu ajouteras des Dashboards pour l'usine logicielle elle-même ainsi que tout le pipeline. Toute ta chaine de construction doit être mesurée pour toujours garder un oeil sur les dérives éventuelles sur ta qualité et sur ta vélocité.
+
+Quant à ton comité, aucun comité, dès qu'un souci apparait TOUT le monde est sur le pont, pas d'exception. Les DBAs vérifient les métriques de la DB, les Sysadmin check les systèmes, les dev les logs des threads. On n'est plus dans la logique "chacun se refile le bébé", mais dans la logique "chacun check et assure le MOC de son périmètre". On parallélise les vérifs même si on n'a rien à se reprocher. Au besoin on peut même ajouter des métrics pour être sûrs de soi (et on bonifie ses vérifs).
