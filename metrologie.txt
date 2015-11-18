@@ -5,7 +5,7 @@ Vos développements dégagent-ils autant de profit que prévu ? Utilisez-vous vo
 Nous verrons dans ce chapitre comment la métrologie répond à toutes ces questions.
 
 ## Feedback
-Beaucoup d'entreprises au sein desquelles je suis intervenu, travaillent au jugé. Combien ai-je entendu "c'est plutôt lent", "ça prend un certain temps", "j'ai l'impression que ça fonctionne plus ou moins" ?
+Beaucoup d'entreprises au sein desquelles je suis intervenu, travaillent au jugé. Combien de fois ai-je entendu "c'est plutôt lent", "ça prend un certain temps", "j'ai l'impression que ça fonctionne plus ou moins" ?
 Pour savoir de quoi l'on parle, il faut obtenir un retour tangible des éléments et des événements, un _feedback_.
 
 Une des clefs de succès d'une démarche DevOps est la **mesure**. L'intitiave de mesurer les choses s'appelle la métrologie.
