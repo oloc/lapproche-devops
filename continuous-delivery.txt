@@ -44,13 +44,13 @@ Dans cette pratique d'unicité d'outil, seules les valorisations de quelques var
 Pour beaucoup d'entreprises le retour arrière est -permettez-moi l'expression- la cinquième roue du déploiement, une fonctionnalité considérée comme une option d'assurance plus que pour son apport fonctionnel.
 On imagine trop souvent que le retour arrière est une manoeuvre de production, et trop rarement que ça peut être utilisé sur les environnements dits hors production.
 
-On applique un correctif sur un environnement de recette, les tests ne sont pas concluants : désinstallons-le ! Attention non pas à la main à grand renfort de _rename_ et de _.bkp_, mais bien par la fonctionnalité de retour arrière de l'outil de déploiement.
+On applique un correctif sur un environnement de recette, les tests ne sont pas concluants : désinstallons-le ! Attention non pas à la main à grands renforts de _rename_ et de _.bkp_, mais bien par la fonctionnalité de retour arrière de l'outil de déploiement.
 
 Par cet usage en environnement de recette, on rejoint les deux pratiques précédentes. Eviction des erreurs humaines et oublis qui pourraient dénaturer les tests à venir sur cette plate-forme, et épreuve du retour arrière.
 En s'obligeant à réaliser les retours arrière par l'outil et uniquement par lui, on garantit que cette manipulation délicate et stressante en production soit à l'instar du déploiement un **non-événement**.
 
 > Les gains associés à cette pratique rejoint les deux autres, auxquels s'ajoute :
-- la suppression des effets de bords et conséquence de cette manipulation si elle n'est pas maitrisée
+- la suppression des effets de bords et conséquences de cette manipulation si elle n'est pas maitrisée
 - la suppression du stress de l'opération en situation sensible
 
 ## Tests automatiques
