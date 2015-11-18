@@ -1,0 +1,12 @@
+# L'infrastructure élastique
+L'infrastructure ne doit plus être un frein à l'essor des entreprises. A l'heure de la virtualisation, du cloud et des containers, l'infrastructure est élastique, les environnements sont éphémères. Une nouvelle techno-faune est à apprivoiser pour acquérir toujours plus de souplesse.
+
+Nous verrons dans ce chapitre comment l'infrastructure n'est plus une question mais une réponse.
+
+## Infra-as-code
+
+
+## Environnements éphémères
+
+## Infrastructure asservie
+

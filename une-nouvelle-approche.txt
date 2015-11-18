@@ -28,11 +28,11 @@ L'outillage est une conséquence et non l'essence de la démarche DevOps.
 
 ## … ainsi naquît le DevOps.
 Pour bien comprendre le DevOps, il faut revenir à l'objectif de départ. Dans notre contexte actuel (Cf chapitres précédents), une entreprise en pointe se doit de mettre ses idées sur le marché au plus vite.
-Le temps entre l'expression d'une idée et son exploitation s'appelle le Time-to-market. Et l'objectif principal est sa réduction.
+Le temps entre l'expression d'une idée et son exploitation s'appelle le _time-to-market_. Et l'objectif principal est sa réduction.
 
 > « Until your code is in production making money or doing what it is meant to do, you have simply wasted your time. »
 > – Chris Read
 
-Disons que l’objectif de réduire le Time-to-Market à force d’addition de concepts et de bonnes pratiques, a amené à la fin de l’histoire l’approche DevOps.
+Disons que l’objectif de réduire le _time-to-market_ à force d’addition de concepts et de bonnes pratiques, a amené à la fin de l’histoire l’approche DevOps.
 Il faut comprendre le mouvement DevOps non pas comme un début mais comme une conséquence. C’est une histoire qui finit par « … ainsi naquît le DevOps. »
 

@@ -1,0 +1,23 @@
+# Continuous delivery
+La réduction du temps de mise sur le marché, le fameux time-to-market est la clef de voûte du mouvement DevOps. L'automatisation, l'industrialisation, l'orchestration, sont autant d'éléments de réponse qui ne prennent leur sens que dans un pipeline.
+
+Nous verrons dans ce chapitre comment faire vite et bien.
+
+## Déploiement
+Déployer une application doit être un geste facile voire anodin. Et pour cela, il faudra porter ses efforts sur deux points :
+- Tout, les actions et les vérifications, doit être automatisé
+- Tous les outils de cette automatisation doivent être versionnés avec les _releases_ concernées
+
+D'abord pour éviter les erreurs humaines ou les oublis dans le geste et dans les vérifications. Oui, même les vérifications ! Car elles font partie intégrante du processus de déploiement. Si elles demandent un jugement ou une interprétation humaine, c'est qu'elles ne répondent pas au critère de répétabilité exposé plus loin.
+
+Ensuite, il faut considérer l'outil de déploiement comme un élément de l'application à déployer. Une application peut changer de technologie ou de morphologie, dans un tel cas l'outil de déploiement doit évoluer avec l'application elle-même. Il est donc nécessaire de l'archiver dans l'outil de gestion de version.
+
+### Unicité de l'outil
+
+### Répétabilité et fiabilité
+
+### Réversibilité
+
+## Tests automatiques
+
+## Pipeline

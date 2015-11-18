@@ -1,0 +1,3 @@
+# Continuous integration
+La compétence irremplaçable du développeur, celle qui doit occuper tout son temps est dans le code et rien d'autre. Toutes les autres tâches nécessaires à l'obtention d'un programme doivent être effectuées par des mécanismes automatisés.
+Nous verrons dans ce chapitre comment oeuvrent les rouages d'une usine de développement.
