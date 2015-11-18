@@ -1,8 +1,24 @@
 # La métrologie
+Votre IT est porteur du besoin de votre activité. Mais comment établir leur rapport en terme de business ?
+Vos développements dégagent-ils autant de profit que prévu ? Utilisez-vous votre IT à bon escient ? Les ressources sont-elles allouées au regard de l'activité ? Maintenez-vous des systèmes rentables ? Livrez-vous bien de la valeur ?
 
+Nous verrons dans ce chapitre comment la métrologie répond à toutes ces questions.
 
-Introduction
-Feedback instruments
+## Feedback
+Beaucoup d'entreprises au sein desquelles je suis intervenu, travaillent au jugé. Combien ai-je entendu "c'est plutôt lent", "ça prend un certain temps", "j'ai l'impression que ça fonctionne plus ou moins" ?
+Pour savoir de quoi l'on parle, il faut obtenir un retour tangible des éléments et des événements, un _feedback_.
+
+Une des clefs de succès d'une démarche DevOps est la **mesure**. L'intitiave de mesurer les choses s'appelle la métrologie.
+
+> Le bateau DevOps ne navigue pas au doigt mouillé mais aux instruments.
+
+Pourquoi est-ce un élément clef ? Parce qu'une transformation DevOps est une amélioration constante, et qu'on ne peut améliorer que ce que l'on peut mesurer.
+Mise en situation. Il est très délicat de répondre à ce cas de figure : "Et là ? C'est plus lent ou c'est moins lent ?". Alors que "on est passé de 3s à 12ms" expose deux constats et un résultat.
+
+## 
+
+## Tout collecter
+Quand on s'intéresse à la question, il est fréquent de lire l'aphorisme anglais _measure everything_.
 
 Tout mesurer tout collecter
 Générer, collecter, analyser
@@ -14,3 +30,31 @@ Changement de machine (reboot)
 Changement de configuration
 
 Qualité / Fiabilité / Vélocité
+
+
+## La supervision
+La terminologie de _monitoring_ est flou et confuse, et interfère avec celle de supervision. Parfois, on peut lire l'approche monitoring = supervision + métrologie, pourquoi pas. Certains contestent l'incorporation ou non de l'état des traitements. Sauf que tel qu'à l'hôpital, le _monitoring_, ce qui importe n'est pas la valeur en soi, mais le bip lorsque ça sort du scope.
+
+Pour ma part mon approche est que le _monitoring_ est l'anglicisme de supervision. De faire de subtiles distinctions entre monitoring et supervision, de toutes façons, ne change rien sur le concept exposé ici.
+
+Il faut surtout noter la grosse différence :
+- La supervision est la surveillance d'un état ou d'un seuil. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée).
+- La métrologie remonte des mesures. Le résultat appelle des analyses pour vérifier la bonne santé générale de tout ou partie de son SI.
+
+Un exemple vaut mieux que deux définitions tu l'auras. Imaginons un espace disque dédié pour la réception de fichiers à intégrer. Ils ont une rétention définie pour se caler avec les besoins de reprise et les sauvegardes.
+Dans un tel cas, une supervision de contrôle de l'espace disque sera mise en place avec des seuils de taux d'occupation, par exemple de 80% à 94% l'alerte sera un warning, pour anticiper une action de fond, et de 95 à 100% un KO pour une action immédiate.
+Comme nous l'avons déjà dit, dans la cadre la mise en place de la métrologie, on abordera le sujet différemment. Aucun seuil, mais des mesures à effectuer. Et si on retrouvera l'espace disque, on retrouvera aussi l'activité disque (I/O, répartitions sur le raid, etc.), mais aussi la taille des fichiers reçus, leur date/heure d'arrivée. Car la taille croissante des fichiers est la cause du franchissement du seuil d'occupation disque. Et c'est l'énorme différence !
+
+Cette différence n'est pas seulement sur la forme, mais c'est aussi sur le fond. En mesurant l'évolution de la taille de mes fichiers, non seulement je vais anticiper mon occupation disque, mais je vais aussi pouvoir corréler cette mesure avec la mesure du temps d'intégration afin de théoriser sur cette relation de cause à effet taille de fichiers / temps de traitement. Je vais pouvoir mettre en relation, ma charge CPU, mémoire, les temps de réponse, la charge réseau, etc. L'ensemble de ces mesures me permettent de mieux comprendre comment évolue la partie de mon SI en charge de l'intégration de ces fichiers.
+
+L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe).
+
+Pour terminer sur cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
+Le but avoué de la supervision est de s'aider lors des interventions et pour cela on tente de surveiller bien des aspects de sa production dans les conséquences et non dans les causes. C'est même un tort commun que j'ai pu diagnostiqué chez mes clients. Et on pourrait donc réduire la supervision en supprimant le superflu (ceinture, bretelles, parachute) en privilégiant bien plus la prévention, en s'attachant aux causes. Et cette analyse préventive est effectivement, un des objectifs de la métrologie.
+Effectivement, on pourrait réduire sa supervision au profit d'une meilleure métrologie, mais on ne pourrait la supprimer. Ne serait-ce que la prise en compte d'un aléa, un matériel qui crame, une réception de fichier d'une taille exorbitante, un déni de service, etc.
+
+Si la position du curseur entre supervision et métrologie devrait (pour une amélioration de la qualité de service) être revu, les deux sont complémentaires.
+
+>A retenir :
+La supervision surveille l'état et les seuils et alerte des cas anormaux, alors que la métrologie mesure la bonne santé du SI.
+La supervision alerte des conséquences quand la métrologie peut prévenir des causes.
