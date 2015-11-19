@@ -15,22 +15,51 @@ Une des clefs de succès d'une démarche DevOps est la **mesure**. L'intitiave d
 Pourquoi est-ce un élément clef ? Parce qu'une transformation DevOps est une amélioration constante, et qu'on ne peut améliorer que ce que l'on peut mesurer.
 Mise en situation. Il est très délicat de répondre à ce cas de figure : "Et là ? C'est plus lent ou c'est moins lent ?". Alors que "on est passé de 3s à 12ms" expose deux constats et un résultat.
 
-## 
+>A retenir :
+On ne peut améliorer que ce que l'on peut mesurer.
+
+## En trois temps
+La métrologie est une pratique se réalisant en trois étapes indispensables :
+- générer
+- collecter
+- analyser
+
+### Générer
+Il faut générer les historiques, les métriques, les informations nécessaires. Sans cette première étape rien n'est possible.
+
+### Collecter
+Les informations générées sont disséminées dans différents fichiers de _log_, de base, sur différents fichiers. Pour pouvoir confronter et corréler ces informations, il faut les collecter dans un dépôt central.
+
+### Analyser
+Une fois collectées ces informations pourront être consultées et affichées sous forme de tableau, de graphe, de camembert dans le but de les analyser. Que ce soit pour mieux comprendre une situation incidentelle ou particulière, ou pour mieux anticiper une évolution.
+
+>A retenir:
+Les trois actions de la métrologie sont générer, collecter, analyser.
 
 ## Tout collecter
-Quand on s'intéresse à la question, il est fréquent de lire l'aphorisme anglais _measure everything_.
+Quand on s'intéresse à la métroogie, il est fréquent de lire l'aphorisme anglais _measure everything_. J'apporterai une traduction et interprétation personnelles : Tout collecter.
 
-Tout mesurer tout collecter
-Générer, collecter, analyser
+Il faut générer et collecter un maximum d'éléments dans l'optique de répondre à tous les cas de figures.
+On peut imaginer le cas de figure où la base de données présente des soucis de performances et qu'après investigation on mette en doute les temps d'accès disques. Depuis quand est-ce que ces temps se sont dégradés ? Zut ! On n'a pas collecté cette information.
+Qu'est-ce que cela aurait pu donner comme information ? Que cela correspond à la date à laquelle une nouvelle baie a été installée dans le _datacenter_, par exemple.
 
-Evénements
-Equipiers (recrutement, contexte, on-boarding)
-Release (prod et hors prod)
-Changement de machine (reboot)
-Changement de configuration
+Cet exemple souligne l'importance de la collecte de ce que l'on appelle des événements.
 
-Qualité / Fiabilité / Vélocité
+## Evénements
+Les événements sont des marqueurs temporels, des jalons pour lesquels il y a un avant et un après. Pour reprendre l'exemple de la nouvelle baie disque, on pourra noter les deux événements début et fin de la mise en place qui marquent le avant, le pendant et le après la mise en place.
+Ces informations pourraient être utiles pour déterminer une corrélation de faits sur le matériel proche voire l'ensemble du _datacenter_.
 
+Un autre exemple qui permet de mieux comprendre l'usage des événements pour la métrologie en tant qu'instrument d'amélioration : le nouveau développeur. Ca parait farfelu que de notifier à son outil de métrologie qu'un nouveau développeur est arrivé. Et pourtant ! Suite à son arrivée on pourra prévoir une dégradation des indicateurs de qualité du développement. Ce qui est normal pour un nouvel arrivant. Après une petite période d'adaptation on constatera un retour à la normale.
+Pourquoi est-ce pertinent ? La pertinence est dans la confrontation de la longueur de cette période d'adaptation pour tous les nouveaux arrivants. Si la période s'allonge, il faut agir (pour limiter la perte de qualité), et l'action pourra se porter sur la méthode de recrutement, sur l'effort d'_on-boarding_, voire sur le contexte (l'application est peut-être de plus en plus complexe à aborder).
+
+Evidemment il faut notifier le déploiement d'une application avec sa version qu'on puisse corréler une version en production et son comportement dans les différents environnements de recette. Ce qui n'est pas chose facile quand il faut retrouver la période de tests de telle version dans un tableau d'avancement de projet. En marquant dans son outil de métrologie l'événement _Release_ il sera possible de filter et afficher la même mesure dans différents environnements.
+
+>A retenir :
+Les événements sont les marqueurs temporels distinguant l'avant de l'après d'un fait ce qui aide à la compréhension d'un comportement.
+
+Pour citer d'autres exemples d'événements communs, notons le changement de matériel, le changement de configuration, les déménagements, les montées de version des différents outils, progiciels ou gratuiciels, la date d'ouverture d'une nouvelle agence, la mise en service d'un nouveau plateau, le lancement d'une campagne de publicité, la publication d'un article vous concernant, une actualité, un fait, une loi concernant votre activité.
+
+>Les gains associés à la prise en compte des événements sont dans la réactivité sur incidents, ou sur anticipation.
 
 ## La supervision
 La terminologie de _monitoring_ est floue et confuse, et interfère avec celle de supervision. Parfois, on peut lire l'approche monitoring = supervision + métrologie, pourquoi pas. Certains contestent l'incorporation ou non de l'état des traitements. Sauf que tel qu'à l'hôpital, le _monitoring_, ce qui importe n'est pas la valeur en soi, mais le bip lorsque ça sort du scope.
@@ -76,4 +105,4 @@ D'autre part, il faut considérer la supervision comme une partie intégrante de
 Quant à la supervision, l'approche DevOps apporte la nécessité de la considérer comme une fonctionnalité de l'application qui doit être recettée.
 
 
-> Les gains associés à cette pratique de supervision sont dans la réactivité face à un aléa.
+>Les gains associés à cette pratique de supervision sont dans la réactivité face à un aléa.
