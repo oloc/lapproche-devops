@@ -49,6 +49,10 @@ Cette différence n'est pas seulement sur la forme, mais c'est aussi sur le fond
 
 La supervision n'opère pas à des corrélations, elle ne s'attache qu'à relever les cas anormaux.
 
+>A retenir :
+La supervision surveille l'état et les seuils et alerte des cas anormaux, alors que la métrologie mesure la bonne santé du SI.
+La supervision alerte des conséquences quand la métrologie peut prévenir des causes.
+
 ### Ne répond pas à la perception
 L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe). La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
 
@@ -61,6 +65,15 @@ Effectivement, on pourrait réduire sa supervision au profit d'une meilleure mé
 
 Si la position du curseur entre supervision et métrologie devrait (pour une amélioration de la qualité de service) être revu, les deux sont complémentaires. D'ailleurs beaucoup d'outils proposent les deux approches en solution native ou à l'aide de greffons.
 
+### Dans une démarche DevOps
+On pourrait considérer que la mise en place de la supervision est une démarche classique et qu'elle ne s'inscrit pas particulièrement dans une démarche DevOps. Plus trivialement, que la supervision n'offre rien de plus dans une démarche DevOps. Ce n'est pas exact.
+
+D'une part, la supervision est trop souvent cantonnée à la production, et peu voire pas du tout mise en place dans les environnements de recette. Il faut bien sentir la nécessité première de la mise en place de la supervision sur tous les environnements. Découvrir par voie de conséquences qu'un banc de tests est arrêté est préjudiciable en terme de durée accrue des tests et donc de temps de livraison. Il est préférable d'être alerté (objet de la supervision) et d'intervenir au plus vite.
+
+D'autre part, il faut considérer la supervision comme une partie intégrante de l'application. Une application doit être livrée avec la supervision afférente, ce n'est pas une démarche à part voire a posteriori. Il faut donc éprouver cette supervision à l'ensemble des environnements de recette. La supervision doit elle aussi être recettée.
+
 >A retenir :
-La supervision surveille l'état et les seuils et alerte des cas anormaux, alors que la métrologie mesure la bonne santé du SI.
-La supervision alerte des conséquences quand la métrologie peut prévenir des causes.
+Quant à la supervision, l'approche DevOps apporte la nécessité de la considérer comme une fonctionnalité de l'application qui doit être recettée.
+
+
+> Les gains associés à cette pratique de supervision sont dans la réactivité face à un aléa.
