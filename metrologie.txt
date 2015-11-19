@@ -37,7 +37,7 @@ Une fois collectées ces informations pourront être consultées et affichées s
 Les trois actions de la métrologie sont générer, collecter, analyser.
 
 ## Tout collecter
-Quand on s'intéresse à la métroogie, il est fréquent de lire l'aphorisme anglais _measure everything_. J'apporterai une traduction et interprétation personnelles : Tout collecter.
+Quand on s'intéresse à la métrologie, il est fréquent de lire l'aphorisme anglais _measure everything_. J'apporterai une traduction et interprétation personnelles : Tout collecter.
 
 Il faut générer et collecter un maximum d'éléments dans l'optique de répondre à tous les cas de figures.
 On peut imaginer le cas de figure où la base de données présente des soucis de performances et qu'après investigation on mette en doute les temps d'accès disques. Depuis quand est-ce que ces temps se sont dégradés ? Zut ! On n'a pas collecté cette information.
@@ -84,6 +84,15 @@ La supervision alerte des conséquences quand la métrologie peut prévenir des 
 
 ### Ne répond pas à la perception
 L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe). La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
+
+### Différence entre supervision et métrologie par l'exemple
+Prenons un exemple hors contexte d'une automobile. La supervision pourrait être : Est-ce que je respecte la limitation de vitesse ? Oui ou Non. Et ce sans connaitre ma vitesse.
+La métrologie serait sur les 5 dernières secondes, quelle est ma vitesse ? Mon accélération ? Ma consommation de carburant ? Le poids totale de la voiture ? Et je ne serais peut-être pas capable de savoir si je respecte la limitation de vitesse (il faudrait que je connaisse cette limitation non mesurable par mon automobile), par contre je peux déterminer si ma consommation est optimale, l'évolution de mon accélération au regard du poids du véhicule, et pourquoi pas déterminer le mode de conduite (et d'usage de l'accélération) à adopter en fonction de ma consommation (plus je consomme, plus la voiture est légère).
+
+Un exemple dans le contexte IT :
+La supervision de l'espace disque : Dépasse-t-il les 80 % ? Oui ou non ?
+La métrologie : Mon espace disque totale mesure 1To et son occupation actuelle est de 750 Go. Je reçois quotidiennement des fichiers de 1Go, je serais donc en rupture prévisionnelle dans 250 jours.
+Au bout de 100 jours, mon occupation est de 850 Go, mais je ne reçois plus de fichiers, plus aucune rupture prévisionnelle.
 
 ### Pratiques complémentaires
 Pour terminer sur cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
