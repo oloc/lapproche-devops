@@ -2,6 +2,6 @@ notre-contexte.txt
 pourquoi-changer.txt
 le-constat.txt
 une-nouvelle-approche.txt
-la-representation-du-DevOps.txt
+une-representation-du-DevOps.txt
 continuous-delivery.txt
 metrologie.txt

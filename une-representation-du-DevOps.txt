@@ -1,8 +1,8 @@
-# Une représentation du DevOps
+# La représentation du DevOps
 
 ![](images/DevOps_Schema.jpg)
 
-Après moult réflexions sur la façon de présenter le DevOps, il m'est apparu qu'il fallait le représenter, qu'il fallait un visuel pour aborder le sujet. Sur ce visuel présenté dans ce chapitre apparaissent les 4 axes principaux du DevOps :
+Après moultes réflexions sur la façon de présenter le DevOps, il m'est apparu qu'il fallait le représenter, qu'il fallait un visuel pour aborder le sujet. Sur ce visuel présenté dans ce chapitre apparaissent les 4 axes principaux du DevOps :
 - _Continuous Integration_
 - _Continuous Delivery_
 - Infrastructure élastique
