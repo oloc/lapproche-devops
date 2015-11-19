@@ -18,6 +18,11 @@ Mise en situation. Il est très délicat de répondre à ce cas de figure : "Et 
 >A retenir :
 On ne peut améliorer que ce que l'on peut mesurer.
 
+## Partie intégrante de l'application
+La métrologie, est un socle indispensable à l'ensemble des pratiques DevOps. Elle permet de constater les améliorations ou les dégradations sur l'ensemble des processus mis en oeuvre entre le _commit_ du développeur et le maintien en condition opérationnel.
+
+Il faut considérer la métrologie comme une partie intégrante de l'application. Une application doit être livrée avec la métrologie afférente, ce n'est pas une démarche à part voire a posteriori. Il faut donc adopter la mise en oeuvre de la métrologie à l'ensemble des environnements et des processus de recette, les tests, les sauvegardes, les provisions, les applications de configurations, etc.
+
 ## En trois temps
 La métrologie est une pratique se réalisant en trois étapes indispensables :
 - générer
