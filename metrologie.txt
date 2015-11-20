@@ -69,16 +69,19 @@ Pour citer d'autres exemples d'événements communs, notons le changement de mat
 ## La supervision
 Très souvent, le terme métrologie est compris comme de la supervision. Voyons donc ici que ces deux pratiques sont différentes et présente une complémentarité. En d'autres termes, l'un n'est pas l'autre, et il faut les deux pour être complet.
 
-La supervision est la surveillance d'un état ou d'un seuil. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée). On s'attache ici non pas aux valeurs des sondages, mais à leur confrontation avec un seuil ou à l'état attendu.
+La supervision est la surveillance d'un état inattendu ou d'un seuil franchi. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée). On s'attache ici non pas aux valeurs des sondages, mais à leur confrontation avec un seuil ou à l'état attendu.
 
 La supervision répond (par oui ou par non) à ce genre de questions : Le taux d'occupation de l'espace disque dépasse-til 80% ? Dans les 10 dernières secondes la CPU est-elle à 100% ? Le traitement est-il bien terminé ? Le service est-il démarré ? 
 
 A ne pas confondre donc avec la métrologie qui collecte des mesures et analyse la bonne santé générale de tout ou partie de son SI.
 
+>A retenir :
+La supervision est la surveillance d'un état inattendu ou d'un seuil franchi.
+
 ### Parenthèse terminologique
 La terminologie de _monitoring_ est floue et confuse, et interfère avec celle de supervision. Parfois, on peut lire l'approche monitoring = supervision + métrologie, pourquoi pas. Certains contestent l'incorporation ou non de l'état des traitements. Sauf que tel qu'à l'hôpital, le _monitoring_, ce qui importe n'est pas la valeur en soi, mais le bip lorsque ça sort du scope.
 
-Pour ma part mon approche est que le _monitoring_ est l'anglicisme de supervision. De faire de subtiles distinctions entre monitoring et supervision, de toutes façons, ne change rien sur le concept exposé ici.
+Pour ma part mon approche est que le _monitoring_ est l'anglicisme de supervision. De faire de subtiles distinctions entre _monitoring_ et supervision, de toutes façons, ne change rien sur le concept exposé ici.
 
 ### Différence entre supervision et métrologie
 Un exemple vaut mieux que deux définitions tu l'auras. Imaginons un espace disque dédié pour la réception de fichiers à intégrer. Ils ont une rétention définie pour se caler avec les besoins de reprise et les sauvegardes. L'occupation devrait être peu ou prou constant.
