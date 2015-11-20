@@ -53,6 +53,17 @@ En s'obligeant à réaliser les retours arrière par l'outil et uniquement par l
 - la suppression des effets de bords et conséquences de cette manipulation si elle n'est pas maitrisée
 - la suppression du stress de l'opération en situation sensible
 
+### Mesures
+Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l'évolution de votre outil de déploiement. Voici quelques mesures communément utilisées :
+- Temps de livraison pour chaque environnement
+- Nombre d'actions manuelles
+- Temps de chaque action manuelle
+- Temps d'indisponibilité par noeud
+- Temps d'indisponibilité du service (ou de l'application)
+- Nombre d'incidents lors de la mise en production
+- Nombre d'incidents a posteriori liés à la mise en production
+- Temps de retour arrière par environnement
+
 ## Tests automatiques
 
 ## Pipeline
