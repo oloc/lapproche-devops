@@ -8,6 +8,7 @@ Après moult réflexions sur la façon de présenter le DevOps, il m'est apparu 
 - Infrastructure élastique
 - Métrologie
 
-Ce dernier axe, la métrologie, est en support des 3 autres, comme un socle indispensable, comme un liant. Nous reviendrons plus tard sur cet axe particulier dans une approche DevOps. Et je prends déjà le soin de préciser ici ce caractère spécial.
+Chacun de ces 4 axes est composé de 3 briques. Chacune de ces briques figure un ensemble de concepts et/ou de pratiques. Une telle description, j'en ai bien conscience, reste abstraite, soyez assuré ami lecteur que nous aborderons tous ces éléments par la suite.
 
-Revenons à la représentation. Chacun de ces 4 axes est composé de 3 briques. Chacune de ces briques figure un ensemble de concepts et/ou de pratiques. Une telle description, j'en ai bien conscience, reste abstraite, soyez assuré ami lecteur que nous aborderons tous ces éléments par la suite.
+Le dernier axe, la métrologie, est en support des 3 autres, comme un socle indispensable, comme un liant. je prends déjà le soin de préciser ici ce caractère spécial de cet axe particulier dans une approche DevOps.
+
