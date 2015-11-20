@@ -67,19 +67,31 @@ Pour citer d'autres exemples d'événements communs, notons le changement de mat
 >Les gains associés à la prise en compte des événements sont dans la réactivité sur incidents, ou sur anticipation.
 
 ## La supervision
+Très souvent, le terme métrologie est compris comme de la supervision. Voyons donc ici que ces deux pratiques sont différentes et présente une complémentarité. En d'autres termes, l'un n'est pas l'autre, et il faut les deux pour être complet.
+
+La supervision est la surveillance d'un état ou d'un seuil. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée). On s'attache ici non pas aux valeurs des sondages, mais à leur confrontation avec un seuil ou à l'état attendu.
+
+La supervision répond (par oui ou par non) à ce genre de questions : Le taux d'occupation de l'espace disque dépasse-til 80% ? Dans les 10 dernières secondes la CPU est-elle à 100% ? Le traitement est-il bien terminé ? Le service est-il démarré ? 
+
+A ne pas confondre donc avec la métrologie qui collecte des mesures et analyse la bonne santé générale de tout ou partie de son SI.
+
+### Parenthèse terminologique
 La terminologie de _monitoring_ est floue et confuse, et interfère avec celle de supervision. Parfois, on peut lire l'approche monitoring = supervision + métrologie, pourquoi pas. Certains contestent l'incorporation ou non de l'état des traitements. Sauf que tel qu'à l'hôpital, le _monitoring_, ce qui importe n'est pas la valeur en soi, mais le bip lorsque ça sort du scope.
 
 Pour ma part mon approche est que le _monitoring_ est l'anglicisme de supervision. De faire de subtiles distinctions entre monitoring et supervision, de toutes façons, ne change rien sur le concept exposé ici.
 
-Il faut surtout noter la grosse différence :
-- La supervision est la surveillance d'un état ou d'un seuil. C'est binaire voire ternaire : OK, KO, incertain (ou warning). Le résultat appelle ou non à une intervention (d'urgence ou planifiée).
-- La métrologie remonte des mesures. Le résultat appelle des analyses pour vérifier la bonne santé générale de tout ou partie de son SI.
-
+### Différence entre supervision et métrologie
 Un exemple vaut mieux que deux définitions tu l'auras. Imaginons un espace disque dédié pour la réception de fichiers à intégrer. Ils ont une rétention définie pour se caler avec les besoins de reprise et les sauvegardes. L'occupation devrait être peu ou prou constant.
 Dans un tel cas, une supervision de contrôle de l'espace disque sera mise en place avec des seuils de taux d'occupation, par exemple de 80% à 94% l'alerte sera un warning, pour anticiper une action de fond, et de 95 à 100% un KO pour une action immédiate.
 Comme nous l'avons déjà dit, dans le cas de la métrologie, on abordera le sujet différemment. Aucun seuil, mais des mesures à effectuer. Et si on retrouvera l'espace disque, on retrouvera aussi l'activité disque (I/O, répartitions sur le raid, etc.), mais aussi la taille des fichiers reçus, leur date/heure d'arrivée. Car, pour l'exemple, la taille croissante des fichiers est la cause du franchissement du seuil d'occupation disque. Et c'est l'énorme différence !
 
 Cette différence n'est pas seulement sur la forme, mais c'est aussi sur le fond. En mesurant l'évolution de la taille de mes fichiers, non seulement je vais anticiper mon occupation disque, mais je vais aussi pouvoir corréler cette mesure avec la mesure du temps d'intégration afin de théoriser sur cette relation de cause à effet taille de fichiers / temps de traitement. Je vais pouvoir mettre en relation, ma charge CPU, mémoire, les temps de réponse, la charge réseau, etc. L'ensemble de ces mesures me permettent de mieux comprendre comment évolue la partie de mon SI en charge de l'intégration de ces fichiers.
+
+Un autre exemple plus sommaire :
+La supervision surveille si l'espace disque dépasse les 80 %. Oui ou non ?
+Avec la métrologie, on mesurera : l'espace disque totale est de 1To, son occupation actuelle est de 750 Go, quotidiennement sont reçus des fichiers de 1Go. On analysera une rupture prévisionnelle dans 250 jours.
+Au bout de 100 jours, on mesurera : une occupation est de 850 Go, mais plus de réception de fichiers, on analysera qu'il n'existe plus aucune rupture prévisionnelle.
+Noter qu'on parle côté d'un taux (80%) et de l'autre de valeurs (1To, 750GO, 1Go, 850Go).
 
 La supervision n'opère pas à des corrélations, elle ne s'attache qu'à relever les cas anormaux.
 
@@ -90,15 +102,6 @@ La supervision alerte des conséquences quand la métrologie peut prévenir des 
 ### Ne répond pas à la perception
 L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe). La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
 
-### Différence entre supervision et métrologie par l'exemple
-Prenons un exemple hors contexte d'une automobile. La supervision pourrait être : Est-ce que je respecte la limitation de vitesse ? Oui ou Non. Et ce sans connaitre ma vitesse.
-La métrologie serait sur les 5 dernières secondes, quelle est ma vitesse ? Mon accélération ? Ma consommation de carburant ? Le poids totale de la voiture ? Et je ne serais peut-être pas capable de savoir si je respecte la limitation de vitesse (il faudrait que je connaisse cette limitation non mesurable par mon automobile), par contre je peux déterminer si ma consommation est optimale, l'évolution de mon accélération au regard du poids du véhicule, et pourquoi pas déterminer le mode de conduite (et d'usage de l'accélération) à adopter en fonction de ma consommation (plus je consomme, plus la voiture est légère).
-
-Un exemple dans le contexte IT :
-La supervision de l'espace disque : Dépasse-t-il les 80 % ? Oui ou non ?
-La métrologie : Mon espace disque totale mesure 1To et son occupation actuelle est de 750 Go. Je reçois quotidiennement des fichiers de 1Go, je serais donc en rupture prévisionnelle dans 250 jours.
-Au bout de 100 jours, mon occupation est de 850 Go, mais je ne reçois plus de fichiers, plus aucune rupture prévisionnelle.
-
 ### Pratiques complémentaires
 Pour terminer sur cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
 
@@ -107,6 +110,8 @@ Le but avoué de la supervision est de s'aider lors des interventions et pour ce
 Effectivement, on pourrait réduire sa supervision au profit d'une meilleure métrologie, mais on ne pourrait la supprimer. Ne serait-ce que la prise en compte d'un aléa, un matériel qui crame, une réception de fichier d'une taille exorbitante, un déni de service, etc.
 
 Si la position du curseur entre supervision et métrologie devrait (pour une amélioration de la qualité de service) être revu, les deux sont complémentaires. D'ailleurs beaucoup d'outils proposent les deux approches en solution native ou à l'aide de greffons.
+
+>Les gains associés à cette pratique de supervision sont dans la réactivité face à un aléa.
 
 ### Dans une démarche DevOps
 On pourrait considérer que la mise en place de la supervision est une démarche classique et qu'elle ne s'inscrit pas particulièrement dans une démarche DevOps. Plus trivialement, que la supervision n'offre rien de plus dans une démarche DevOps. Ce n'est pas exact.
@@ -119,4 +124,3 @@ D'autre part, il faut considérer la supervision comme une partie intégrante de
 Quant à la supervision, l'approche DevOps apporte la nécessité de la considérer comme une fonctionnalité de l'application qui doit être recettée.
 
 
->Les gains associés à cette pratique de supervision sont dans la réactivité face à un aléa.
