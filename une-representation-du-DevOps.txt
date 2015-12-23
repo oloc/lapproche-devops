@@ -3,12 +3,45 @@
 ![](images/DevOps_Schema.jpg)
 
 Après moult réflexions sur la façon de présenter le DevOps, il m'est apparu qu'il fallait le représenter, qu'il fallait un visuel pour aborder le sujet. Sur ce visuel présenté dans ce chapitre apparaissent les 4 axes principaux du DevOps :
+- Métrologie
 - _Continuous Integration_
 - _Continuous Delivery_
 - Infrastructure élastique
-- Métrologie
 
-Chacun de ces 4 axes est composé de 3 briques. Chacune de ces briques figure un ensemble de concepts et/ou de pratiques. Une telle description, j'en ai bien conscience, reste abstraite, soyez assuré ami lecteur que nous aborderons tous ces éléments par la suite.
+Chacun de ces 4 axes est composé de 3 briques. Chacune de ces briques figure un ensemble de concepts et/ou de pratiques. Une telle description, j'en ai bien conscience, reste abstraite, soyez assuré ami lecteur que nous aborderons tous ces éléments plus en détail par la suite. Voyons ici une première définition de chacune de ces briques.
 
-Le dernier axe, la métrologie, est en support des 3 autres, comme un socle indispensable, comme un liant. je prends déjà le soin de préciser ici ce caractère spécial de cet axe particulier dans une approche DevOps.
+## Métrologie
+Le premier axe, la métrologie, est en support des 3 autres, comme un socle indispensable, comme un liant. Cet axe particulier est le caractère spécial d'une approche DevOps. A mon sens c'est même le signe particulier du DevOps, dans le sens où l'on ne peut pas parler de DevOps sans métrologie. Au risque d'insister, si vous ne deviez mettre en place qu'une seule pratique pour prétendre "faire du DevOps", ce devrait être la métrologie.
 
+>A retenir :
+Pas de DevOps sans métrologie.
+
+### Qualité
+Le niveau d'exigence des utilisateurs/clients augmente chaque jour. Il est indispensable de livrer de la qualité, et pour s'en assurer, il faut contrôler, mesurer cette qualité.
+
+### Fiabilité
+Manipuler des items de qualité est une première étape, néanmoins, il faut éviter qu'ils soient dénaturés voire corrompus. La mise en place de processus, de cycles, de circuits sont des méthodes qu'il faut savoir maitriser, éprouver, améliorer et donc étalonner.
+
+### Vélocité
+Nous l'avons aborder, notre objectif est de réduire le _time-to-market_. Il faut donc être en capacité de vérifier, mesurer cette vitesse.
+
+## _Continuous Integration_
+Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je cite Martin Fowler le pionnier, l'inventeur du _Continuous Integration_.
+
+### L'usine logicielle
+Un programme est un assemblage de pièces développées au sein de l'entreprise, par une communauté, par un éditeur. Il est parfois délicat d'opérer à cet assemblage dans une suite d'étapes variées. Ce qu'on appelle **usine logicielle** (_software factory_) est l'ensemble des pratiques qui prennent en charge l'assemblage aussi compliqué qu'il soit. L'objectif est de décharger le développeur de ces tâches pour le sublimer dans ce qu'il fait de mieux : coder.
+
+### Qualimétrie
+### Services
+
+## _Continuous Delivery_
+
+### Déploiement
+### Tests automatiques (Stratégie de tests)
+### Pipeline
+
+## Infrastructure élastique
+
+### _Infra-as-code_
+### Environnements éphémères
+### Infrastructure asservie
