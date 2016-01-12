@@ -32,7 +32,10 @@ Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je ci
 Un programme est un assemblage de pièces développées au sein de l'entreprise, par une communauté, par un éditeur. Il est parfois délicat d'opérer à cet assemblage dans une suite d'étapes variées. Ce qu'on appelle **usine logicielle** (_software factory_) est l'ensemble des pratiques qui prennent en charge l'assemblage aussi compliqué qu'il soit. L'objectif est de décharger le développeur de ces tâches pour le sublimer dans ce qu'il fait de mieux : coder.
 
 ### Qualimétrie
+Le contrôle de la qualité du code doit être effectué au sein de l'usine logicielle. Cette brique regroupe un ensemble de pratiques de développement à adopter (on utilise le terme anglais de _Craftmanship_) tout autant que les tests et les mesures associés.
+
 ### Services
+Une application a longtemps été monolithique. Avec l'évolution des besoins, il est apparu nécessaire de la tronçonner en plusieurs modules. De part cette architecture logicielle des dépendances fortes sont apparues. Et avec ces dépendances des latences de livraison que j'ai coutume d'appeler "aller à la vitesse du gnou le plus lent". Afin de s'abstraire de ces dépendances entre autre, il est nécessaire d'envisager une applications comme un ensemble de services. Cette orientation permet un souplesse interne à l'application et une ouverture vers d'autres applications.
 
 ## _Continuous Delivery_
 
