@@ -44,7 +44,13 @@ Une application a longtemps été monolithique. Avec l'évolution des besoins, i
 ### Pipeline
 
 ## Infrastructure élastique
+De part son caractère matériel, l'infrastructure a longtemps été considérer comme de l'immobilier, qui ne peut être mobile. Plus simplement, un serveur est une boite qu'on pose dans une salle machine, et il n'en bouge plus. Cette image d'Epinal n'a plus cours. De nos jours l'infrastructure est un ensemble de ressources allouées ou désallouées en fonction des besoins. L'infrastructure est devenue élastique.
 
 ### _Infra-as-code_
+L'infrastructure étant un ensemble de ressources remplaçables pour des raisons de maintenance ou de recherche de performances, qu'elle en est la valeur réelle ? Sa vraie valeur est dans la topologie qu'elle porte, et donc dans notre capacité à reproduire cette topologie. En informatique, le geste de reproduire et la source de ce geste passe par du code. L'estimation de la valeur de son infrastructure passe par l'appréhension que l'infrastructure est du code.
+
 ### Environnements éphémères
+Quand une infrastructure est définie dans du code reproductible, il est donc possible de générer un environnement complet à l'envi. De le détruire et le recréer. On est donc en capacité d'utiliser des environnements éphémères. Cette capacité tire des pratiques inédites.
+
 ### Infrastructure asservie
+L'asservissement de l'infrastructure est le dernier étage des concepts ouvrant à l'élasticité. Il est possible et prometteur d'adosser la création et le suivi de ses environnements éphémères à une mécanique d'asservissement. L'infrastructure devient dynamique et à géométrie variable.
