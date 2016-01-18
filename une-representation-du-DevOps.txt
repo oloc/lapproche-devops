@@ -38,10 +38,16 @@ Le contrôle de la qualité du code doit être effectué au sein de l'usine logi
 Une application a longtemps été monolithique. Avec l'évolution des besoins, il est apparu nécessaire de la tronçonner en plusieurs modules. De part cette architecture logicielle des dépendances fortes sont apparues. Et avec ces dépendances des latences de livraison que j'ai coutume d'appeler "aller à la vitesse du gnou le plus lent". Afin de s'abstraire de ces dépendances entre autre, il est nécessaire d'envisager une applications comme un ensemble de services. Cette orientation permet un souplesse interne à l'application et une ouverture vers d'autres applications.
 
 ## _Continuous Delivery_
+La réduction du temps de mise sur le marché, le fameux _time-to-market_ est la clef de voûte du mouvement DevOps. L'automatisation, l'industrialisation, l'orchestration, sont autant d'éléments de réponse qui ne prennent leur sens que dans un pipeline.
 
 ### Déploiement
+La mise en production est un moment clef dans la vie d'une DSI. Afin d'éviter les oublis, les écarts, les fautes de frappe, il devient vital d'automatiser, de fiabiliser son déploiement. Et ce geste ne devrait plus être stressant, mais naturel.
+
 ### Tests automatiques (Stratégie de tests)
+Quand il est aisé de déployer, il est aisé d'opérer sur ces plate-formes de tests autant qu'il le faudra pour reprendre les tests encore et toujours. Un nouveau patch ? Déploiez, testez. A cette mécanique s'ajoute la diversité des cas de tests, ce que l'on veut tester, et comment. A l'instar des sauvegardes aux stratégies granulaires, les recettes s'appuient sur une stratégie de tests.
+
 ### Pipeline
+Elément principal de la réduction du _time-to-market_, il permet de supprimer toutes les attentes, les latences, entre les équipes. 
 
 ## Infrastructure élastique
 De part son caractère matériel, l'infrastructure a longtemps été considérer comme de l'immobilier, qui ne peut être mobile. Plus simplement, un serveur est une boite qu'on pose dans une salle machine, et il n'en bouge plus. Cette image d'Epinal n'a plus cours. De nos jours l'infrastructure est un ensemble de ressources allouées ou désallouées en fonction des besoins. L'infrastructure est devenue élastique.
