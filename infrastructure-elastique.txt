@@ -9,4 +9,4 @@ Nous verrons dans ce chapitre comment l'infrastructure n'est plus une question m
 ## Environnements éphémères
 
 ## Infrastructure asservie
-
+L'asservissement de l'infrastructure est le dernier étage des concepts ouvrant à l'élasticité. Parfois le terme anglais de _self healing_ est utilisé.
