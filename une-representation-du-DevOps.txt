@@ -26,7 +26,23 @@ Manipuler des items de qualité est une première étape, néanmoins, il faut é
 Nous l'avons aborder, notre objectif est de réduire le _time-to-market_. Il faut donc être en capacité de vérifier, mesurer cette vitesse.
 
 ## _Continuous Integration_
-Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je cite Martin Fowler le pionnier, l'inventeur du _Continuous Integration_.
+Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je cite Martin Fowler le pionnier, l'inventeur du _Continuous Integration_ :
+
+* _Maintain a Single Source Repository_
+* _Automate the Build_
+* _Make Your Build Self-Testing_
+* _Everyone Commits To the Mainline Every Day_
+* _Every Commit Should Build the Mainline on an Integration Machine_
+* _Fix Broken Builds Immediately_
+* _Keep the Build Fast_
+* _Test in a Clone of the Production Environment_
+* _Make it Easy for Anyone to Get the Latest Executable_
+* _Everyone can see what's happening_
+* _Automate Deployment_
+
+Nous reviendrons sur tous ces poins dans le chapitre dédié au _Continuous Integration_.
+
+Source: http://www.martinfowler.com/articles/continuousIntegration.html
 
 ### L'usine logicielle
 Un programme est un assemblage de pièces développées au sein de l'entreprise, par une communauté, par un éditeur. Il est parfois délicat d'opérer à cet assemblage dans une suite d'étapes variées. Ce qu'on appelle **usine logicielle** (_software factory_) est l'ensemble des pratiques qui prennent en charge l'assemblage aussi compliqué qu'il soit. L'objectif est de décharger le développeur de ces tâches pour le sublimer dans ce qu'il fait de mieux : coder.
