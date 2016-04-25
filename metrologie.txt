@@ -23,19 +23,19 @@ La métrologie, est un socle indispensable à l'ensemble des pratiques DevOps. E
 
 Il faut considérer la métrologie comme une partie intégrante de l'application. Une application doit être livrée avec la métrologie afférente, ce n'est pas une démarche à part voire a posteriori. Il faut donc adopter la mise en oeuvre de la métrologie à l'ensemble des environnements et des processus de recette, les tests, les sauvegardes, les provisions, les applications de configurations, etc.
 
-## En trois temps
+## Générer, collecter, analyser
 La métrologie est une pratique se réalisant en trois étapes indispensables :
 - générer
 - collecter
 - analyser
 
-### Générer
+#### Générer
 Il faut générer les historiques, les métriques, les informations nécessaires. Sans cette première étape rien n'est possible.
 
-### Collecter
+#### Collecter
 Les informations générées sont disséminées dans différents fichiers de _log_, de base, sur différents fichiers. Pour pouvoir confronter et corréler ces informations, il faut les collecter dans un dépôt central.
 
-### Analyser
+#### Analyser
 Une fois collectées ces informations pourront être consultées et affichées sous forme de tableau, de graphe, de camembert dans le but de les analyser. Que ce soit pour mieux comprendre une situation incidentelle ou particulière, ou pour mieux anticiper une évolution.
 
 >A retenir:
