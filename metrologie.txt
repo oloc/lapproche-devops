@@ -103,7 +103,8 @@ La supervision surveille l'état et les seuils et alerte des cas anormaux, alors
 La supervision alerte des conséquences quand la métrologie peut prévenir des causes.
 
 ### Ne répond pas à la perception
-L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations ("ça imprime pas", "pourtant j'envoie le fichier", et j'en passe). La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
+L'autre point de différence est dans la perception. Avec la supervision, on peut connaitre un état OK ou KO, mais ça ne permet pas de répondre à l'utilisateur qui perçoit l'application, par exemple le fameux "c'est lent". Avec la métrologie, on peut mieux déceler le point d'achoppement responsable du malaise que ce soit une latence, ou une perte d'informations. "Selon nos mesures, ça prenait 1,2 secondes, effectivement, nous sommes actuellement à 9 secondes". "Après correction, nous sommes passé de 2 secondes à 4 ms". Dans un sens ou un autre, déterioration ou amélioration, la métrologie permet de quantifier en partie la perception des utilisateurs.
+La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
 
 ### Pratiques complémentaires
 Pour terminer sur cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
