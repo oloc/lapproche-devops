@@ -1,10 +1,10 @@
-notre-contexte.md
-pourquoi-changer.md
-le-constat.md
-une-nouvelle-approche.md
-une-representation-du-DevOps.md
-metrologie.md
-continuous-integration.md
-continuous-delivery.md
-infrastructure-elastique.md
+Time-to-market/notre-contexte.md
+Time-to-market/pourquoi-changer.md
+Time-to-market/le-constat.md
+Time-to-market/une-nouvelle-approche.md
+Les 4 axes principaux/une-representation-du-DevOps.md
+Les 4 axes principaux/metrologie.md
+Les 4 axes principaux/continuous-integration.md
+Les 4 axes principaux/continuous-delivery.md
+Les 4 axes principaux/infrastructure-elastique.md
 Annexes/representation.md
