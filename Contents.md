@@ -1,0 +1,9 @@
+notre-contexte.md
+pourquoi-changer.md
+le-constat.md
+une-nouvelle-approche.md
+une-representation-du-DevOps.md
+metrologie.md
+continuous-integration.md
+continuous-delivery.md
+infrastructure-elastique.md

@@ -1,9 +1,0 @@
-notre-contexte.txt
-pourquoi-changer.txt
-le-constat.txt
-une-nouvelle-approche.txt
-une-representation-du-DevOps.txt
-metrologie.txt
-continuous-integration.txt
-continuous-delivery.txt
-infrastructure-elastique.txt
