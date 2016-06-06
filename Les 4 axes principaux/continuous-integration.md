@@ -3,58 +3,20 @@ La compétence irremplaçable du développeur, celle qui doit occuper tout son t
 Nous verrons dans ce chapitre comment oeuvrent les rouages d'une usine de développement.
 
 ## Usine logicielle
+Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièce d'un grand puzzle.
 
 ## Qualimétrie
+Le maîtrise de la qualité de ce qui est développé peut s'effectuer à deux niveaux :
 
-### TDD - Test Driven Development
+ * En amont au moment de la conception et de la rédaction du code
+ * En aval avec des outils de contrôle
 
-### Collective Code Ownership
+### De la belle ouvrage
+->Pour obtenir de la qualité, il faut coder de la qualité.<-
 
-### Software Entropy
+La préoccupation de la qualité lors du développement passe par un ensemble de pratiques à adopter qui est souvent regroupé sous le terme anglais de _Craftmanship_. Si la traduction en est délicate, elle recouvre les notions de **savoir-faire, maîtrise, expertise**. Ces pratiques sont décrites dans un chapitre dédié, néanmoins elles ont le trait commun de privilégier la collaboration d'un exercice -la programmation- qui a souvent été considéré comme solitaire.
 
-### Pair Programming
 
-### Style Guide
-
-### Design Patterns
-
-### Lint
-
-### Refactoring
-
-### Coding Dojo
-
-### Clean Code
-
-### Test Harness
-
-### KISS - Keep it simple stupid
-
-### BDD - Behaviour Driven Development
-
-### Tech leading
-
-### Newspaper Style
-
-### Broken windows
-
-### Boy scout rule
-
-### DRY - Don't repeat yourself
-
-### Unit testing
-
-### Egoless Programming
-
-### YAGNI - You ain't gonna need it
-
-### SOC - Separation of concerns
-
-### Code review
-
-### Data Separation
-
-### Code Legacy
 
 
 ## Services
