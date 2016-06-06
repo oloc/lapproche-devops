@@ -22,6 +22,15 @@ Et combien de correctifs faudrait-il pour ce même incident ?
 
 Ces résultats sont directement liés à la coopération entre équipes.
 
+## Silos
+Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent traduits par exploitants. Derrière ce terme se cache l'ensemble des exploitants. Et la liste est longue.
+
+Que l'on observe la DSI d'un grand groupe ou une petite équipe informatique, les fonctions sont les mêmes. Citons pêle-mêle, les administrateurs systèmes (Linux, Windows, iSeries, etc.), les administrateurs réseaux, les administrateurs de bases de données, les administrateurs intergiciel (_middleware_), les responsables de la sécurité informatiques, les gestionnaires de stockage, les experts de la virtualisations, et les superviseurs. Et j'en oublie, néanmoins, ça donne une idée de ce que sont les _Ops_.
+
+Quand toutes ces fonctions sont séparées en autant d'équipe, on parle de *silos*.
+
+Et lors d'un projet informatique, il faut faire appel à tous ces corps de métier oeuvrant tour à tour, de silo en silo.
+
 ## Perte de qualité et de vélocité
 Ce clivage entre les équipes entraînent des frictions voire des crises.
 Pragmatiquement, ça se traduit par des pertes de temps, des mauvaises livraisons, et une perte globale de qualité.
