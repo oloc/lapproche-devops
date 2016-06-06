@@ -94,7 +94,7 @@ Un autre exemple plus sommaire :
 La supervision surveille si l'espace disque dépasse les 80 %. Oui ou non ?
 Avec la métrologie, on mesurera : l'espace disque totale est de 1To, son occupation actuelle est de 750 Go, quotidiennement sont reçus des fichiers de 1Go. On analysera une rupture prévisionnelle dans 250 jours.
 Au bout de 100 jours, on mesurera : une occupation est de 850 Go, mais plus de réception de fichiers, on analysera qu'il n'existe plus aucune rupture prévisionnelle.
-Noter qu'on parle côté d'un taux (80%) et de l'autre de valeurs (1To, 750GO, 1Go, 850Go).
+Noter qu'on parle d'un côté d'un taux (80%) et de l'autre de valeurs (1To, 750GO, 1Go, 850Go).
 
 La supervision n'opère pas à des corrélations, elle ne s'attache qu'à relever les cas anormaux.
 
@@ -107,11 +107,11 @@ L'autre point de différence est dans la perception. Avec la supervision, on peu
 La supervision n'a pas cette grille de lecture, c'est noir ou blanc mais pas entre gris clair et gris foncé.
 
 ### Pratiques complémentaires
-Pour terminer sur cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
+Pour terminer cette longue parenthèse sur la supervision, on pourrait s'imaginer à cette lecture, qu'on pourrait se passer de la supervision au profit de la métrologie, or ce n'est pas le cas.
 
 Le but avoué de la supervision est de s'aider lors des interventions et pour cela on tente de surveiller bien des aspects de sa production dans les conséquences et non dans les causes. Et on pourrait donc s'imaginer réduire la supervision en supprimant le superflu (ceinture, bretelles, parachute) quant aux conséquences en privilégiant bien plus la prévention, en s'attachant aux causes. Et cette analyse préventive est un des objectifs de la métrologie.
 
-Effectivement, on pourrait réduire sa supervision au profit d'une meilleure métrologie, mais on ne pourrait la supprimer. Ne serait-ce que la prise en compte d'un aléa, un matériel qui crame, une réception de fichier d'une taille exorbitante, un déni de service, etc.
+Effectivement, on pourrait réduire sa supervision au profit d'une meilleure métrologie, mais on ne pourrait jamais la supprimer. Ne serait-ce que la prise en compte d'un aléa, un matériel qui crame, une réception de fichier d'une taille exorbitante, un déni de service, etc.
 
 Si la position du curseur entre supervision et métrologie devrait (pour une amélioration de la qualité de service) être revu, les deux sont complémentaires. D'ailleurs beaucoup d'outils proposent les deux approches en solution native ou à l'aide de greffons.
 
