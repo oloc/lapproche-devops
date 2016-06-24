@@ -38,7 +38,7 @@ Les informations générées sont disséminées dans différents fichiers de _lo
 #### Analyser
 Une fois collectées ces informations pourront être consultées et affichées sous forme de tableau, de graphe, de camembert dans le but de les analyser. Que ce soit pour mieux comprendre une situation incidentelle ou particulière, ou pour mieux anticiper une évolution.
 
->A retenir:
+>A retenir :
 Les trois actions de la métrologie sont générer, collecter, analyser.
 
 ## Tout collecter
