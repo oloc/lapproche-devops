@@ -2,10 +2,10 @@ Time-to-market/notre-contexte.md
 Time-to-market/pourquoi-changer.md
 Time-to-market/le-constat.md
 Time-to-market/une-nouvelle-approche.md
-Les 4 axes principaux/une-representation-du-DevOps.md
-Les 4 axes principaux/metrologie.md
-Les 4 axes principaux/continuous-integration.md
-Les 4 axes principaux/continuous-delivery.md
-Les 4 axes principaux/infrastructure-elastique.md
-Les pratiques/craftsmanship.md
+Les_4_axes_principaux/une-representation-du-DevOps.md
+Les_4_axes_principaux/metrologie.md
+Les_4_axes_principaux/continuous-integration.md
+Les_4_axes_principaux/continuous-delivery.md
+Les_4_axes_principaux/infrastructure-elastique.md
+Les_pratiques/craftsmanship.md
 Annexes/representation.md
