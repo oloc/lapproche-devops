@@ -39,17 +39,17 @@ Comme évoqué plus tôt, la perte de vitesse dans un monde en pleine accéléra
 
 ![](images/TimeLine.jpg)
 
-Prenons pour exemple une nouvelle application nécessitant deux machines virtuelles pour porter un serveur d'application et une base de données. L'utilisateur fera une demande qui sera prise en compte par l'équipe de virtualisation,, puis par les administrateurs système, puis par les administrateurs de base de données, puis l'équipe intergiciel (_middleware_). Comme le suggère l'illustration, il faut 12 jours à l'utilisateur pour obtenir l'infrastruture prête à accueillir son application. Et ce, alors que la charge (temps de réalisation) est de 1 heure et demie.
+Prenons pour exemple une nouvelle application nécessitant deux machines virtuelles pour porter un serveur d'application et une base de données. L'utilisateur fera une demande qui sera prise en compte par l'équipe de virtualisation, puis par les administrateurs système, puis par les administrateurs de base de données, puis l'équipe intergiciel (_middleware_). Comme le suggère l'illustration, il faut 12 jours à l'utilisateur pour obtenir l'infrastruture prête à accueillir son application. Et ce, alors que la charge (temps de réalisation) est de 1 heure et demie.
 
 L'utilisateur peut s'impatienter et se demander où en est sa demande, à quelle étape, pourquoi est-ce que c'est aussi long. Il est malheureusement courant d'entendre "ce n'est pourtant pas compliqué ça te prend deux minutes !". Il est possible que les équipes se renvoient la balle, ce n'est pas nous mais les autres qui ont pris leur temps.
-Parfois les attentes des uns ne correspondent pas à ce qui est livrés par les autres. Les raisons sont variées, inadéquation techniques, différents sur la sécurisation, mauvaises anticipations...
+Parfois les attentes des uns ne correspondent pas à ce qui est livré par les autres. Les raisons sont variées, inadéquations techniques, différents sur la sécurisation, mauvaises anticipations...
 
 >A retenir :
 Cette organisation en silo, génère un climat de tensions entre les équipes, voire de la défiance.
 
 
 ## Perte de qualité et de vélocité
-Le clivage entre les équipes Dev et Ops dans une organisation en silos, entraînent des frictions voire des crises. Pragmatiquement, ça se traduit par des pertes de temps, des mauvaises livraisons, et une perte globale de qualité.
+Le clivage entre les équipes Dev et Ops et/ou dans une organisation en silos, entraînent des frictions voire des crises. Pragmatiquement, ça se traduit par des pertes de temps, des mauvaises livraisons, et à terme à une perte globale de qualité.
 
 Pour rattraper cette qualité, certaines entreprises mettent l'accent sur :
 - Les processus, ce qui crée encore plus de la latence.
@@ -57,3 +57,6 @@ Pour rattraper cette qualité, certaines entreprises mettent l'accent sur :
 
 Ce qui génère de la perte de vélocité.
 
+
+>A retenir :
+Aucun perfectionnement des méthodes en place ne parvient à répondre à cette exigence de vélocité, il faut donc adopter une nouvelle approche !
