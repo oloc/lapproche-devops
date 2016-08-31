@@ -7,5 +7,6 @@ Les 4 axes principaux/metrologie.md
 Les 4 axes principaux/continuous-integration.md
 Les 4 axes principaux/continuous-delivery.md
 Les 4 axes principaux/infrastructure-elastique.md
+Les pratiques/vocabulaire.md
 Les pratiques/craftsmanship.md
 Annexes/representation.md
