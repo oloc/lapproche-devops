@@ -41,6 +41,16 @@ Il faut donc prendre le soin de réparer ses fenêtres. Dès qu'une imperfection
 
 > Les petits efforts réguliers de correction évitent l'effet boule neige provoquant un code grossier. 
 
+## Boy scout rule
+Une des règles de Baden-Powell créateur des _boy scouts_ est de toujours laisser le site de campement plus propre qu'en arrivant.
+
+Appliqué au développement, ça consiste à corriger quelques coquilles ou de rendre un peu meilleur (et non tout recoder). Par exemples, rendre le nom d'une variable plus parlant, ou transformer une partie de code en fonctions.
+Ces petits aménagements rendre le code plus lisible donc plus maintenable.
+
+> Laisser le code plus propre que vous ne l'avez trouvé.
+
+On pourrait rapprocher cette pratique qui est un apport d'amélioration à la _broken windows_ qui est une correction.
+
 ## Pair Programming
 
 ## Style Guide
@@ -62,8 +72,6 @@ Il faut donc prendre le soin de réparer ses fenêtres. Dès qu'une imperfection
 ## Tech leading
 
 ## Newspaper Style
-
-## Boy scout rule
 
 ## DRY - Don't repeat yourself
 
