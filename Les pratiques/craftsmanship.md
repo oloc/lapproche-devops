@@ -1,4 +1,4 @@
-# _Craftmanship_
+# _Craftsmanship_
 
 ## TDD - Test-Driven Development
 C'est une technique de développement logicielle préconisant d'écrire le tests avant le code logiciel, dans un cycle tel que :
@@ -15,8 +15,31 @@ Enfin, tout développeur peut apporter des améliorations sans risque au code d'
 ## BDD - Behaviour Driven Development
 
 ## Collective Code Ownership
+Il est fréquent que dans une équipe de développeurs, chacun soit responsable de "son bout de code", et personne ne peut le modifier sans l'aval du développeur concerné.
+Avec cette pratique, tout le monde est responsable du code. Cette notion entraine que chacun peut modifier toute partie du code.
+
+Ce n'est donc plus une personne dédiée qui pourra corriger un bug, c'est tout le monde. C'est un gain en vélocité dans la résolution d'incident.
+
+Un développeur peut apporte des erreurs en s'imaginant corriger et/ou améliorer une partie du code qu'il maîtrise mal. C'est pourquoi la contrainte de cette pratique est qu'il est impératif que des tests unitaires sont exécutés systématiquement pour déceler ces introductions d'erreurs.
+
 
 ## Software Entropy
+Le second principe de la thermodynamique énoncé pour la première fois par Sadi Carnot en 1824 introduit la notion d'entropie. Elle représente la mesure du désordre. Appliqué au développement, il faut retenir :
+
+> L'entropie d'un système isolé ne peut qu'augmenter ou rester constante.
+
+Pour simplifier, il est inéluctable qu'un programme utilisé voit ce qu'on appelle **la complexité** augmenter, et donc le potentiel de désordre augmenter. Plus votre code est complexe et plus il est délicat à maintenir et améliorer. Il faut donc prendre garde à contrôler et maitriser ce phénomène.
+
+## Broken windows
+La théorie de la _vitre cassée_ est issue des sciences sociales et de la criminologie.
+
+Imaginons un bâtiment avec quelques vitres cassées. Si ces vitres ne sont pas remplacées, la tentation pour des vandales d'en casser d'autres s'accroit. Eventuellement certains pourraient chercher à entrer dans le bâtiment, pour le dégrader, l'incendier ou le squatter. De telles situations ont une influence sur le voisinage proche voire tout le quartier.
+
+Pour revenir sur une application de cette pratique au développement logiciel, il faut la résumer au fait qu'une petite négligence ou étourderie peut, par l'accumulation, entrainer un développeur à y intégrer du code approximatif. En se plaçant dans la tête de ce développeur, on pourrait y entendre "vu comment le reste est codé, je ne vais pas m'éreinté."
+
+Il faut donc prendre le soin de réparer ses fenêtres. Dès qu'une imperfection est découverte opportunément ou détectée par un outil de qualité de code par exemple, il faut prendre le soin de la corriger. Suivant cette pratique, ce petit effort évitera de grosses refontes de code.
+
+> Les petits efforts réguliers de correction évitent l'effet boule neige provoquant un code grossier. 
 
 ## Pair Programming
 
@@ -24,11 +47,11 @@ Enfin, tout développeur peut apporter des améliorations sans risque au code d'
 
 ## Design Patterns
 
-## Lint
+## Lint
 
 ## Refactoring
 
-## Coding Dojo
+## Coding Dojo
 
 ## Clean Code
 
@@ -40,11 +63,9 @@ Enfin, tout développeur peut apporter des améliorations sans risque au code d'
 
 ## Newspaper Style
 
-## Broken windows
-
 ## Boy scout rule
 
-## DRY - Don't repeat yourself
+## DRY - Don't repeat yourself
 
 ## Unit testing
 
