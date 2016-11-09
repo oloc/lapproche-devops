@@ -30,6 +30,16 @@ Le second principe de la thermodynamique énoncé pour la première fois par Sad
 
 Pour simplifier, il est inéluctable qu'un programme utilisé voit ce qu'on appelle **la complexité** augmenter, et donc le potentiel de désordre augmenter. Plus votre code est complexe et plus il est délicat à maintenir et améliorer. Il faut donc prendre garde à contrôler et maitriser ce phénomène.
 
+## KISS - Keep it simple stupid
+Ce principe préconise la simplicité. Toute complexité inutile est à proscrire.
+
+Cet énoncé peut paraitre évident, je me permets d'ajouter un peu de contexte. De part mon expérience, j'ai pu rencontrer des personnes cherchant à optimiser la performance de leur programme avant même d'avoir testé une implémentation simple. Ce qui ajoute de la complexité sans avoir de référence. Est-ce qu'une version plus simple sans doute non optimisée ne répondait pas au besoin ? Et est-ce que ce premier code produit avec la préoccupation de la performance est réellement plus performant qu'une version simple ?
+Dans ce cas il est préférable de produire un code simple et selon le besoin de l'optimiser. Cet enchaînement limite la complexité et l'optimisation à leur plus stricte nécessité.
+
+Cette pratique est afférente à la _software entropy_.
+
+> Maitriser votre complexité en codant simple puis en optimisant.
+
 ## Broken windows
 La théorie de la _vitre cassée_ est issue des sciences sociales et de la criminologie.
 
@@ -66,8 +76,6 @@ On pourrait rapprocher cette pratique qui est un apport d'amélioration à la _b
 ## Clean Code
 
 ## Test Harness
-
-## KISS - Keep it simple stupid
 
 ## Tech leading
 
