@@ -1,7 +1,7 @@
 # _Craftsmanship_
 
 ## TDD - Test-Driven Development
-C'est une technique de développement logicielle préconisant d'écrire le tests avant le code logiciel, dans un cycle tel que :
+C'est une technique de développement logicielle préconisant d'écrire le test avant le code logiciel, dans un cycle tel que :
 1. Ecrire le test
 2. Vérifier qu'il échoue (car la partie de logicielle concernée n'existe pas encore)
 3. Ecrire le minimum de code pour répondre à ce test.
@@ -61,6 +61,17 @@ Ces petits aménagements rendre le code plus lisible donc plus maintenable.
 
 On pourrait rapprocher cette pratique qui est un apport d'amélioration à la _broken windows_ qui est une correction.
 
+## Newspaper Style
+Cette pratique empreinte à la maquette des journaux.
+
+Quand on ouvre un journal de presse écrite, on sait de suite où trouver les articles, l'édito, la météo, la politique intérieure, les articles internationaux, etc.
+En pratique de développement, on privilégiera une disposition constante des différentes parties de son code (fonctions, déclaration de variables, valorisation, etc.), afin qu'une habitude s'établisse pour chaque mainteneur et que ça devienne instinctif pour retrouver un élément.
+
+De plus, il est plus confortable pour nos yeux de lire des colonnes de peu de mots, et les journaux s'y sont adaptés.
+Quand on programme, on cherchera à éviter les longues lignes de code.
+
+> Une constance dans la disposition, et des lignes courtes favorisent la lecture d'un code.
+
 ## Pair Programming
 
 ## Style Guide
@@ -79,8 +90,6 @@ On pourrait rapprocher cette pratique qui est un apport d'amélioration à la _b
 
 ## Tech leading
 
-## Newspaper Style
-
 ## DRY - Don't repeat yourself
 
 ## Unit testing
@@ -95,5 +104,5 @@ On pourrait rapprocher cette pratique qui est un apport d'amélioration à la _b
 
 ## Data Separation
 
-## Code Legacy
+## Katas
 
