@@ -10,3 +10,4 @@ Les 4 axes principaux/infrastructure-elastique.md
 Les pratiques/vocabulaire.md
 Les pratiques/craftsmanship.md
 Annexes/representation.md
+Annexes/pratiques_craftsmanship.md

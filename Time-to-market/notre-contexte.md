@@ -2,7 +2,7 @@
 
 ## Le monde change, la société change
 Aujourd'hui lorsqu'on veut choisir une banque, une assurance, un opérateur, ou tout autre fournisseur de services, on surfe sur son smartphone ou sur internet. En fait, on choisit surtout une application. 
-Les jeunes générations ne vont au coin de la rue qu'après s'être connectés. La connection à une interface est notre première prise de contact avec un fournisseur de services.
+Les jeunes générations ne vont au coin de la rue qu'après s'être connectés. La connexion à une interface est notre première prise de contact avec un fournisseur de services.
 
 ## Une consommation de plus en plus de services
 Qu'est-ce donc que ces services ? Tous les services de stockage, de _cloud_, vos photos, vos vidéos, de partage, de consultation _everywhere_, de messagerie, d'agenda, de carnet d'adresses, et autres éléments de votre vie privée.

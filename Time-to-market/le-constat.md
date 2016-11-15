@@ -22,8 +22,8 @@ Le fameux « ça fonctionnait sur mon laptop », lui révèle une méconnaissa
 Son corollaire, pour régler un problème urgent, entraîne une distorsion « temporaire » de la production, en faisant fi des standards.
 
 Outre ces anecdotes, d'autres symptômes sont révélateurs :
-Combien de temps vous faut-il pour détecter un bug, l'analyser, et livrer le correctif ?  Et combien de correctifs faudrait-il pour ce même incident ?
-Ces résultats sont directement liés à la coopération entre équipes.
+Combien de temps vous faut-il pour détecter un _bug_, l'analyser, et livrer le correctif ?  Et combien de correctifs faudrait-il pour ce même incident ?
+Ces résultats sont directement liés à la coopération entre les équipes.
 
 ## Silos
 Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent traduits par exploitants. Derrière ce terme se cache l'ensemble des exploitants. Et la liste est longue.

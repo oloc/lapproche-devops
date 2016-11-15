@@ -1,7 +1,7 @@
 # _Craftsmanship_
 Une même phrase écrite sur du papier avec un stylo (je me permets de préciser) peut être griffonnée, être lisible ou illisible, ou parfaitement calligraphiée. Et pourtant ça reste la même phrase.
 
-Pour le développement, l'analogie est assez pertinente. Même si le programme fera bien ce qui est demandé, qu'il est fonctionnel, le code source peut être de qualités diverses. Certains codes sont agréables lire, compréhensibles à la première lecture, d'autres vont être rédhibitoires à lire, et incompréhensibles.
+Pour le développement, l'analogie est assez pertinente. Même si le programme fera bien ce qui est demandé, qu'il est fonctionnel, le code source peut être de qualités diverses. Certains codes sont agréables à lire, compréhensibles à la première lecture, d'autres vont être rédhibitoires à lire, et incompréhensibles.
 Ces difficultés de lecture peuvent entrainer une incompréhension, donc des retards dans la maintenance ou les évolutions voire de mauvais apports ou corrections. 
 
 > Un code bien écrit facilite la maintenance et les évolutions. 
