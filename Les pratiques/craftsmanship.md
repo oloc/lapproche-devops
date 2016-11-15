@@ -1,6 +1,17 @@
 # _Craftsmanship_
+Une même phrase écrite sur du papier avec un stylo (je me permets de préciser) peut être griffonnée, être lisible ou illisible, ou parfaitement calligraphiée. Et pourtant ça reste la même phrase.
 
-## TDD - Test-Driven Development
+Pour le développement, l'analogie est assez pertinente. Même si le programme fera bien ce qui est demandé, qu'il est fonctionnel, le code source peut être de qualités diverses. Certains codes sont agréables lire, compréhensibles à la première lecture, d'autres vont être rédhibitoires à lire, et incompréhensibles.
+Ces difficultés de lecture peuvent entrainer une incompréhension, donc des retards dans la maintenance ou les évolutions voire de mauvais apports ou corrections. 
+
+> Un code bien écrit facilite la maintenance et les évolutions. 
+
+Qu'est-ce qu'un bon code ? bien écrit ? La réponse à une telle question est délicate. Et sans doute que chacun aura une réponse différente. Néanmoins, on peut énoncer un ensemble de pratiques qui aident à son obtention.
+Voyez le tableau suivant présentant un ensemble de pratiques décrites ci-après. 
+
+![](images/Pratiques_Craftsmanship.png)
+
+## TDD - Test-Driven Development
 C'est une technique de développement logicielle préconisant d'écrire le test avant le code logiciel, dans un cycle tel que :
 1. Ecrire le test
 2. Vérifier qu'il échoue (car la partie de logicielle concernée n'existe pas encore)
