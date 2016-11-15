@@ -24,7 +24,7 @@ Finie l'époque où l'on attendait patiemment 5 secondes qu'une page web s'affic
 On est réceptif à la maquette d'un site, et à l'ergonomie d'une application.
 Or si l'application est mal designée, lente, ou ne convient pas, on en change et donc on change de fournisseur de services.
 
-L'utilisateur devient de plus en plus impulsif.  Avec les différents _stores_, il est très aisé de satisfaire son désir.
+L'utilisateur devient de plus en plus impulsif.  Avec les différents _stores_, il est très aisé pour lui de satisfaire son désir.
 
 ## La demande des utilisateurs est en pleine explosion
 - Consommation de plus en plus de services

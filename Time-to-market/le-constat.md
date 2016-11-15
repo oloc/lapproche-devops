@@ -15,20 +15,20 @@ Cette description certes caricaturale permet de mettre en relief la divergence d
 Alors que les équipes de développement et d'exploitation oeuvrent toutes les deux pour le bénéfice de l'activité, leurs approches sont antagonistes.
 
 ## Clivage entre les Devs et les Ops
-Il n'est pas rare qu'à la machine à café des exploitants (les Ops) l'on se raconte la dernière des Devs qui mettent la production en péril avec des programmes calamiteux et des processus de livraisons mal ficelés.
-De même les Devs vont parler de « ces gros bourrins de la prod' » qui n'ont pas compris et/ou appliqué les consignes comme il se doit.
+Il n'est pas rare qu'à la machine à café des exploitants l'on se raconte la dernière des Devs qui mettent la production en péril avec des programmes calamiteux et des processus de livraisons mal ficelés.
+De même les Devs vont parler de « ces gros bourrins de l'exploit' » qui n'ont pas compris et/ou appliqué les consignes comme il se doit.
 
 Le fameux « ça fonctionnait sur mon laptop », lui révèle une méconnaissance des configurations et/ou contraintes de sécurité des serveurs de production.
-Son corollaire, pour régler un problème urgent, entraîne une distorsion « temporaire » de la production, en faisant fi des standards.
+Son corollaire de bricoler rapidement pour régler un problème urgent, entraîne une distorsion « temporaire » de la production, en faisant fi des standards.
 
 Outre ces anecdotes, d'autres symptômes sont révélateurs :
 Combien de temps vous faut-il pour détecter un _bug_, l'analyser, et livrer le correctif ?  Et combien de correctifs faudrait-il pour ce même incident ?
 Ces résultats sont directement liés à la coopération entre les équipes.
 
 ## Silos
-Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent traduits par exploitants. Derrière ce terme se cache l'ensemble des exploitants. Et la liste est longue.
+Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent traduit par exploitants. Derrière ce terme se cache l'ensemble des exploitants. Et la liste est longue.
 
-Que l'on observe la DSI d'un grand groupe ou une petite équipe informatique, les fonctions sont les mêmes. Citons pêle-mêle, les administrateurs systèmes (Linux, Windows, iSeries, etc.), les administrateurs réseaux, les administrateurs de bases de données, les administrateurs intergiciel (_middleware_), les responsables de la sécurité informatiques, les gestionnaires de stockage, les experts de la virtualisations, et les superviseurs. Et j'en oublie, néanmoins, ça donne une idée de ce que sont les _Ops_.
+Que l'on observe la DSI d'un grand groupe ou une équipe informatique d'une petite société, les fonctions _Ops_ sont les mêmes. Pour l'un on trouvera plusieurs équipes dédiées à une fonction particulière et dans l'autre c'est fréquemment une poignée de personnes "multi-fonctions", néanmoins ces fonctions sont les mêmes. Citons pêle-mêle, les administrateurs systèmes (Linux, Windows, iSeries, etc.), les administrateurs réseaux, les administrateurs de bases de données, les administrateurs intergiciel (_middleware_), les responsables de la sécurité informatiques, les gestionnaires de stockage, les experts de la virtualisations, et les superviseurs. Et j'en oublie, néanmoins, ça donne une idée de ce que sont les _Ops_.
 
 Quand toutes ces fonctions sont séparées en autant d'équipe, on parle de **silos**.
 
@@ -45,7 +45,7 @@ L'utilisateur peut s'impatienter et se demander où en est sa demande, à quelle
 Parfois les attentes des uns ne correspondent pas à ce qui est livré par les autres. Les raisons sont variées, inadéquations techniques, différents sur la sécurisation, mauvaises anticipations...
 
 >A retenir :
-Cette organisation en silo, génère un climat de tensions entre les équipes, voire de la défiance.
+Cette organisation en silos, génère un climat de tensions entre les équipes, voire de la défiance.
 
 
 ## Perte de qualité et de vélocité
@@ -60,3 +60,10 @@ Ce qui génère de la perte de vélocité.
 
 >A retenir :
 Aucun perfectionnement des méthodes en place ne parvient à répondre à cette exigence de vélocité, il faut donc adopter une nouvelle approche !
+
+## Loi de Conway
+
+    Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
+      — Melvin E. Conway
+
+Source : http://www.melconway.com/Home/Committees_Paper.html
