@@ -63,7 +63,10 @@ Aucun perfectionnement des méthodes en place ne parvient à répondre à cette 
 
 ## Loi de Conway
 
-    Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
-      — Melvin E. Conway
+>Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
+>— Melvin E. Conway
+
+Une traduction pourrait être :
+"_Toute organisation qui conçoit un système (défini plus largement ici que les seuls systèmes d'information) produira inévitablement une conception dont la structure est une copie de la structure de communication de l'organisation._"
 
 Source : http://www.melconway.com/Home/Committees_Paper.html
