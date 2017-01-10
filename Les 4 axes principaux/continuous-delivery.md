@@ -1,5 +1,5 @@
 # Continuous delivery
-La réduction du temps de mise sur le marché, le fameux _time-to-market_ est la clef de voûte du mouvement DevOps. L'automatisation, l'industrialisation, l'orchestration, sont autant d'éléments de réponse qui ne prennent leur sens que dans un pipeline.
+La réduction du temps de mise sur le marché, le fameux _time-to-market_ est la clef de voûte du mouvement DevOps. L'automatisation, l'industrialisation, l'orchestration, sont autant d'éléments de réponse qui ne prennent leur sens que dans un _pipeline_.
 
 Nous verrons dans ce chapitre comment faire vite et bien.
 
@@ -30,11 +30,12 @@ Les environnements de recette servent à tester l'application tout autant que so
 - la facilité à déployer en recette par conséquent dans la vélocité des prises en compte des correctifs
 
 ### Unicité de l'outil
-La pratique d'éprouver son outil de déploiement n'est possible qu'avec un outil unique. Il est indispensable que l'outil qui serve à déployer une application sur un environnement soit celui qui serve pour tous les environnements y compris la production, et même, si j'ose dire, surtout la production ! Et j'insiste, non pas une copie, un duplicata, un similaire, mais bien l'unique outil lui-même. Pourquoi ? Pour parer à l'envie d'apporter des modifications seulement pour tel ou tel environnement, ce qui de facto casse le caractère unique de l'outil.
+La pratique d'éprouver son outil de déploiement n'est possible qu'avec un outil unique. Il est indispensable que l'outil qui serve à déployer une application sur un environnement soit celui qui serve pour tous les environnements y compris la production, et même, il faut considérer la production en un environnement comme les autres ! Et j'insiste, non pas une copie, un duplicata, un similaire, mais bien l'unique outil lui-même. Pourquoi ? Pour parer à l'envie d'apporter des modifications seulement pour tel ou tel environnement, ce qui de facto casse le caractère unique de l'outil, et par voie de conséquence saborde la mise à l'épreuve de l'outil de déploiement.
 
-Unicité pour les environnements tout autant que pour les livraisons. En d'autres termes, que l'on livre une livraison, majeure, mineure, ou un correctif, l'outil doit être le même. Cette distinction entre ces livraisons est à proscrire en terme de déploiement puisque pour simplifier mineures et corrections sont des sous-ensembles de la majeure.
+Unicité pour les environnements tout autant que pour les livraisons. En d'autres termes, que l'on livre une livraison, majeure, mineure, ou un correctif, l'outil doit être le même. En réalisant une distinction vous perdriez le bénéfice de la répétition ou vous seriez dans l'obligation d'éprouver et maintenir non pas un unique outil, mais plusieurs outils. Cette distinction entre ces livraisons est à proscrire en terme de déploiement puisque pour simplifier mineures et corrections sont des sous-ensembles de la majeure.
 
 Concrétement, l'outil doit comprendre le "mais ça ne concerne pas cette partie" non pas comme une méthode différente mais comme un "ne fait rien". Par exemple, si la base de données n'est modifiée qu'en majeure, et bien lors d'une mineure, on réalise le déploiement avec un _no operation_ pour la partie base de données.
+
 
 Dans cette pratique d'unicité d'outil, seules les valorisations de quelques variables seront différentes. Les variables elles-mêmes seront identiques et donc sans référence à l'environnement (exemple à proscrire UAT_Server), seules les valeurs seront adaptées.
 
