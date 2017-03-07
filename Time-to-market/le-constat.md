@@ -30,7 +30,7 @@ Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent 
 
 Que l'on observe la DSI d'un grand groupe ou une équipe informatique d'une petite société, les fonctions _Ops_ sont les mêmes. Pour l'un on trouvera plusieurs équipes dédiées à une fonction particulière et dans l'autre c'est fréquemment une poignée de personnes "multi-fonctions", néanmoins ces fonctions sont les mêmes. Citons pêle-mêle, les administrateurs systèmes (Linux, Windows, iSeries, etc.), les administrateurs réseaux, les administrateurs de bases de données, les administrateurs intergiciel (_middleware_), les responsables de la sécurité informatiques, les gestionnaires de stockage, les experts de la virtualisations, et les superviseurs. Et j'en oublie, néanmoins, ça donne une idée de ce que sont les _Ops_.
 
-Quand toutes ces fonctions sont séparées en autant d'équipe, on parle de **silos**.
+Quand toutes ces fonctions sont séparées en autant d'équipes, on parle de **silos**.
 
 Et lors d'un projet informatique, il faut faire appel à tous ces corps de métier oeuvrant tour à tour, de silo en silo.
 
