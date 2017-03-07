@@ -40,7 +40,7 @@ Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je ci
 * _Everyone can see what's happening_
 * _Automate Deployment_
 
-Nous reviendrons sur tous ces poins dans le chapitre dédié au _Continuous Integration_.
+Nous reviendrons sur tous ces points dans le chapitre dédié au _Continuous Integration_.
 
 Source: http://www.martinfowler.com/articles/continuousIntegration.html
 
