@@ -23,22 +23,21 @@ Le niveau d'exigence des utilisateurs/clients augmente chaque jour. Il est indis
 Manipuler des items de qualité est une première étape, néanmoins, il faut éviter qu'ils soient dénaturés voire corrompus. La mise en place de processus, de cycles, de circuits sont des méthodes qu'il faut savoir maitriser, éprouver, améliorer et donc étalonner.
 
 ### Vélocité
-Nous l'avons aborder, notre objectif est de réduire le _time-to-market_. Il faut donc être en capacité de vérifier, mesurer cette vitesse.
+Nous l'avons abordé, notre objectif est de réduire le _time-to-market_. Il faut donc être en capacité de vérifier, mesurer cette vitesse.
 
 ## _Continuous Integration_
 Plusieurs définitions peuvent être trouvées sur internet. Pour ma part, je cite Martin Fowler le pionnier, l'inventeur du _Continuous Integration_ :
 
-* _Maintain a Single Source Repository_
-* _Automate the Build_
-* _Make Your Build Self-Testing_
-* _Everyone Commits To the Mainline Every Day_
-* _Every Commit Should Build the Mainline on an Integration Machine_
-* _Fix Broken Builds Immediately_
-* _Keep the Build Fast_
-* _Test in a Clone of the Production Environment_
-* _Make it Easy for Anyone to Get the Latest Executable_
-* _Everyone can see what's happening_
-* _Automate Deployment_
+* Maintenir un dépôt unique de code source versionné
+* Automatiser la construction
+* Rendre la construction autotestante
+* Tout le monde propage sur l'activité principale chaque jour
+* Chaque propagation doit déclencher une construction de l'activité principale sur une machine d'intégration
+* Maintenir une construction rapide
+* Tester dans un environnement qui est une copie de la production
+* Rendre facilement disponibles les exécutables les plus récents
+* Tout le monde peut voir ce qu'il se passe
+* Automatiser le déploiement
 
 Nous reviendrons sur tous ces points dans le chapitre dédié au _Continuous Integration_.
 
