@@ -36,7 +36,6 @@ Unicité pour les environnements tout autant que pour les livraisons. En d'autre
 
 Concrétement, l'outil doit comprendre le "mais ça ne concerne pas cette partie" non pas comme une méthode différente mais comme un "ne fait rien". Par exemple, si la base de données n'est modifiée qu'en majeure, et bien lors d'une mineure, on réalise le déploiement avec un _no operation_ pour la partie base de données.
 
-
 Dans cette pratique d'unicité d'outil, seules les valorisations de quelques variables seront différentes. Les variables elles-mêmes seront identiques et donc sans référence à l'environnement (exemple à proscrire UAT_Server), seules les valeurs seront adaptées.
 
 > Les gains associés à cette pratique sont directement ceux de la répétabilité, auxquels s'ajoute de facto la facilité de maintenance et d'évolution de l'outil unique.
@@ -68,3 +67,34 @@ Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l
 ## Tests automatiques
 
 ## Pipeline
+Elément principal de la réduction du _time-to-market_, il permet de supprimer toutes les attentes, les latences, entre les équipes. De plus, il favorise les livraisons de qualité. Mais qu'est-ce donc que ce _pipeline_ ?
+
+Jusqu'ici, nous avons beaucoup parlé de tâches automatisées comme autant d'éléments éparses et dissociés. Et ce n'est pas nouveau que les équipes informatiques disposent d'outils ou de scripts pour s'aider dans les tâches répétitives. Néanmoins elles sont souvent lancées manuellement et non automatiquement. Elles restent des outils et ne sont pas encore des automates.
+
+L'idée est d'associer tous ces bouts de puzzle afin de constituer une chaîne de montage à l'instar du monde industriel. Ces tâches sont comme des tuyaux et nous chercherons à les constituer en un _pipeline_ dans lequel s'écoulera un flux de travail (_workflow_) idéalement ininterrompu.
+
+Dans une première approche, on pourra commencer au sein d'une même équipe à enchainer les tâches les unes aux autres. Puis on cherchera à orchestrer les choses entre les équipes quand la charnière se présentera.
+
+>A retenir :
+Le _pipeline_ transforme les outils en automates pour constituer un flux de travail ininterrompu.
+
+### Suppression des attentes
+Comme nous l'avons déjà évoqué, une des principales pertes de temps dans l'élaboration d'une application est dans l'attente entre deux équipes, deux silos.
+
+L'élaboration d'un _pipeline_ est d'abord pour articuler les tâches d'une équipe avec celles d'une autre équipe afin de supprimer cette perte de temps.
+
+Pour reprendre notre exemple, la mise à disposition d'une base de données et d'un serveur d'application peut prendre une douzaine de jours pour une charge de 1 heure et demie. C'est cette compression du temps que l'on cherche à obtenir : passer de 1H30 en 12 jours à 1H30 en 1H30.
+
+![](images/TimeLine.jpg)
+
+![](images/TimeLine_2.jpg)
+
+### _Parallèlisation_
+
+### Suppression des interventions
+Peu souvent exprimé, un autre apport du _pipeline_ est la suppression des interventions humaines. En effet
+
+### Mesures
+Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l'efficacité de votre _pipeline_ et pour cela quelques mesures :
+- Temps entre le _push_ et la mise à diposition pour être livré en production.
+- temps entre le _push_ et la mise en production.
