@@ -89,6 +89,13 @@ Pour reprendre notre exemple, la mise à disposition d'une base de données et d
 
 ![](images/TimeLine_2.jpg)
 
+### _Parallèlisation_
+Ce terme de _parallèlisation_ est un néologisme. Si ce mot n'existe pas, il est couramment utilisé pour désigner le fait de mettre en parallèle des tâches.
+
+Le principe de réaliser des tâches en parallèle est d'effectuer cette charge en moins de temps.
+Pour reprendre notre exemple ci-dessus, on peut imaginer de procéder aux deux tâches "création de la base de données" et "installation du serveur d'application" en même temps, donc en parallèle. Le résultat est sans appel puisque l'on passe de 1H30 de charge réalisée en 1H00 !
+
+>Le gain de la parallèlisation est moindre que celui de la suppression des attentes, néanmoins un gain est possible.
 
 ### Suppression des frustrations
 Quand l'organisation d'une entreprise s'appuie sur un outil de demandes, de tickets, le flux de travail est séquentiel. Les équipes, les silos se passent la demande. Parfois par souci de vélocité, les équipes en amont du flux procèdent à plusieurs demandes à l'attention des équipes aval pour _de facto_ créer des flux parallèles. Ce qui induit une tâche supplémentaire de rapprochement de ce qui est réalisé ou en souffrance, de l'opportunité d'aller plus avant ou de relancer.
