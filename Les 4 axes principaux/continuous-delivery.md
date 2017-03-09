@@ -89,6 +89,9 @@ Pour reprendre notre exemple, la mise à disposition d'une base de données et d
 
 ![](images/TimeLine_2.jpg)
 
+>A retenir :
+La réduction du _time-to-market_ s'appuie essentiellement sur le _pipeline_.
+
 ### _Parallèlisation_
 Ce terme de _parallèlisation_ est un néologisme. Si ce mot n'existe pas, il est couramment utilisé pour désigner le fait de mettre en parallèle des tâches.
 
