@@ -89,7 +89,14 @@ Pour reprendre notre exemple, la mise à disposition d'une base de données et d
 
 ![](images/TimeLine_2.jpg)
 
-### _Parallèlisation_
+
+### Suppression des frustrations
+Quand l'organisation d'une entreprise s'appuie sur un outil de demandes, de tickets, le flux de travail est séquentiel. Les équipes, les silos se passent la demande. Parfois par souci de vélocité, les équipes en amont du flux procèdent à plusieurs demandes à l'attention des équipes aval pour _de facto_ créer des flux parallèles. Ce qui induit une tâche supplémentaire de rapprochement de ce qui est réalisé ou en souffrance, de l'opportunité d'aller plus avant ou de relancer.
+
+Ces tâches sont organisationnelles et non techniques, ce qui provoque des frustrations au sein des équipes techniques. Combien de fois ai-je entendu pester qu'on était pas là pour remplir des tableaux ou suivre des tickets !? Qu'il vaudrait mieux embaucher des secrétaires que des ingénieurs ?
+Et il est vrai que fut un temps où personnellement j'avais étudié l'opportunité de former des secrétaires informatiques à l'instar des secrétaires médicales.
+
+Quand les ingénieurs sont mobilisés à imaginer, mettre en place, maintenir et améliorer un _pipeline_ ils sont pleinement dans leur rôle, satisfaits d'utiliser exclusivement leur compétences. Heureux comme des poissons dans l'eau.
 
 ### Suppression des interventions
 Peu souvent exprimé, un autre apport du _pipeline_ est la suppression des interventions humaines. En effet
