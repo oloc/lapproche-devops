@@ -96,5 +96,5 @@ Peu souvent exprimé, un autre apport du _pipeline_ est la suppression des inter
 
 ### Mesures
 Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l'efficacité de votre _pipeline_ et pour cela quelques mesures :
-- Temps entre le _push_ et la mise à diposition pour être livré en production.
-- temps entre le _push_ et la mise en production.
+- Temps entre le _push_ et la mise à disposition pour être livré en production.
+- Temps entre le _push_ et la mise en production.
