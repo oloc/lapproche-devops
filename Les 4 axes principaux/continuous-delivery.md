@@ -101,15 +101,23 @@ Pour reprendre notre exemple ci-dessus, on peut imaginer de procéder aux deux t
 >Le gain de la parallèlisation est moindre que celui de la suppression des attentes, néanmoins un gain est possible.
 
 ### Suppression des frustrations
-Quand l'organisation d'une entreprise s'appuie sur un outil de demandes, de tickets, le flux de travail est séquentiel. Les équipes, les silos se passent la demande. Parfois par souci de vélocité, les équipes en amont du flux procèdent à plusieurs demandes à l'attention des équipes aval pour _de facto_ créer des flux parallèles. Ce qui induit une tâche supplémentaire de rapprochement de ce qui est réalisé ou en souffrance, de l'opportunité d'aller plus avant ou de relancer.
+Quand l'organisation d'une entreprise s'appuie sur un outil de demandes, de tickets, le flux de travail est séquentiel. Les équipes, les silos se passent la demande. Parfois par souci de vélocité, les équipes en amont du flux procèdent à plusieurs demandes à l'attention des équipes en aval pour _de facto_ créer des flux parallèles. Ce qui induit une tâche supplémentaire de rapprochement de ce qui est réalisé ou en souffrance, de l'opportunité d'aller plus avant ou de relancer.
 
-Ces tâches sont organisationnelles et non techniques, ce qui provoque des frustrations au sein des équipes techniques. Combien de fois ai-je entendu pester qu'on était pas là pour remplir des tableaux ou suivre des tickets !? Qu'il vaudrait mieux embaucher des secrétaires que des ingénieurs ?
+Ces tâches sont organisationnelles et non techniques, ce qui provoque des frustrations au sein des équipes techniques. Combien de fois ai-je entendu pester qu'on n'était pas là pour remplir des tableaux ou suivre des tickets !? Qu'il vaudrait mieux embaucher des secrétaires que des ingénieurs ?
 Et il est vrai que fut un temps où personnellement j'avais étudié l'opportunité de former des secrétaires informatiques à l'instar des secrétaires médicales.
 
 Quand les ingénieurs sont mobilisés à imaginer, mettre en place, maintenir et améliorer un _pipeline_ ils sont pleinement dans leur rôle, satisfaits d'utiliser exclusivement leur compétences. Heureux comme des poissons dans l'eau.
 
+>Un gain en enthousiasme, et donc en idées des équipes techniques est à porter au crédit de l'adoption du _pipeline_.
+
 ### Suppression des interventions
-Peu souvent exprimé, un autre apport du _pipeline_ est la suppression des interventions humaines. En effet
+Peu souvent exprimé, un autre apport du _pipeline_ est la suppression des interventions humaines.
+
+Dans des organisations fortement manuelles, il n'est pas rare de constater que sous des prétextes variés comme "pour aller plus vite" ou "non mais ça passe", on évince une partie du processus. Ce peut être une sauvegarde de précaution, un test, une validation, un contrôle. Et on découvre _a posteriori_ que finalement "ça ne passe pas"...
+
+Toutes ces interventions humaines de contournement ou d'arrangement des processus peuvent entrainer de la mauvaise qualité voire des erreurs. Et c'est en imposant mécaniquement toutes les tâches et donc en gommant ces erreurs humaines provoquées par certains court-circuits, que le _pipeline_ offre en creux une meilleure qualité.
+
+>Le gain de la suppression des interventions humaines est sur la fiabilité du suivi des processus.
 
 ### Mesures
 Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l'efficacité de votre _pipeline_ et pour cela quelques mesures :
