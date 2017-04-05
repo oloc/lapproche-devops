@@ -123,3 +123,5 @@ Toutes ces interventions humaines de contournement ou d'arrangement des processu
 Comme évoqué dans le chapitre de la métrologie, il est important de mesurer l'efficacité de votre _pipeline_ et pour cela quelques mesures :
 - Temps entre le _push_ et la mise à disposition pour être livré en production.
 - Temps entre le _push_ et la mise en production.
+- Nombre d'actions manuelles entre le _push_ et la mise à disposition pour être livré en production
+- Temps de chaque action manuelle
