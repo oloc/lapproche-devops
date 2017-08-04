@@ -3,7 +3,15 @@ La compétence irremplaçable du développeur, celle qui doit occuper tout son t
 Nous verrons dans ce chapitre comment oeuvrent les rouages d'une usine de développement.
 
 ## Usine logicielle
-Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièce d'un grand puzzle.
+Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièce d'un grand puzzle. A l'instar de la chaîne de montage du monde industriel, l'usine logicielle rassemble et assemble ces éléments pour constituer l'application.
+
+Et pour cela il lui faut plusieurs outils (entre parenthèses les noms qui reviennent souvent) :
+* Un outil de gestion de version (CVS, Subversion, Mercurial, Git)
+* Un orchestrateur de tâches (CruiseControl, Hudson, Jenkins, Gitlab-ci)
+* Un outil de construction d'artefacts à partir du code source (make, ant, maven, gradle)
+* Un référentiel de stockage des artefacts (Artifactory, Nexus)
+* Un outil de tests d'intégration (Junit)
+* Un outil de remontée de qualité de code (SonarQube, Jacoco, PMD)
 
 ## Qualimétrie
 Le maîtrise de la qualité de ce qui est développé peut s'effectuer à deux niveaux :
