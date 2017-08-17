@@ -33,5 +33,7 @@ L'effort pour ce dernier processus par rapport à la livraison continue, n'est p
 
 >A retenir :
 - Intégration continue : La fonctionnalité est déployée sur un environnement pour une première validation
-- Livraison continue : La fonctionnalité est prête à être livré en production
+- Livraison continue : La fonctionnalité est prête à être livrée en production
 - Déploiement continu : La foncitonnalité est déployée en production
+
+![](images/continuous.jpg)
