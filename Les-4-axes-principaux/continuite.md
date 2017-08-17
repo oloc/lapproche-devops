@@ -33,10 +33,10 @@ Si l'adjectif "continu" précise le concept, c'est le nom commun qui définit la
 
 ![](images/continuous.jpg)
 
-L'effort pour ce dernier processus par rapport à la livraison continue, n'est pas seulement l'automatisation de la mise en production et la suppression du déclenchement, c'est surtout l'ajout d'un asservissement sur la plupart des tâches sensibles, les débrayages de fonctionnalités, et la conversion des campagnes de tests manuelles en automatisée. Et c'est dans la mise en place de toute cette grille de tests qu'est l'essentiel de l'effort.
+L'effort pour atteindre le déploiement continu à partir de la livraison continue, n'est pas seulement l'automatisation de la mise en production et la suppression du déclenchement, c'est surtout l'ajout d'un asservissement sur la plupart des tâches sensibles, les débrayages de fonctionnalités (_feature toggle_ en anglais), et la conversion des campagnes de tests manuelles en automatisées. Et c'est dans la mise en place de toute cette grille de tests qu'est l'essentiel de l'effort.
 
 >A retenir :
 - Intégration continue : La fonctionnalité est déployée sur une recette
 - Livraison continue : La fonctionnalité est prête à être livrée en production
-- Déploiement continu : La foncitonnalité est déployée en production
+- Déploiement continu : La fonctionnalité est déployée en production
 
