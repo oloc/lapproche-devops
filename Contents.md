@@ -3,6 +3,7 @@ Time-to-market/pourquoi-changer.md
 Time-to-market/le-constat.md
 Time-to-market/une-nouvelle-approche.md
 Les_4_axes_principaux/une-representation-du-DevOps.md
+Les_4_axes_principaux/continuite.md
 Les_4_axes_principaux/metrologie.md
 Les_4_axes_principaux/continuous-integration.md
 Les_4_axes_principaux/continuous-delivery.md
