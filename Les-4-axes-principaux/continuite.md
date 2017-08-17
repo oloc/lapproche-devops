@@ -31,11 +31,12 @@ Si l'adjectif "continu" précise le concept, c'est le nom commun qui définit la
 * Livraison continue : La finalité est d'être fin prêt à livrer soit mettre en production.
 * Déploiement continu : La finalité est de mettre en production tout ce qui passe tous les tests. En clair : aucune intervention humaine entre le moment où le développeur pousse son code et la mise à disposition aux utilisateurs.
 
+![](images/continuous.jpg)
+
 L'effort pour ce dernier processus par rapport à la livraison continue, n'est pas seulement l'automatisation de la mise en production et la suppression du déclenchement, c'est surtout l'ajout d'un asservissement sur la plupart des tâches sensibles, les débrayages de fonctionnalités, et la conversion des campagnes de tests manuelles en automatisée. Et c'est dans la mise en place de toute cette grille de tests qu'est l'essentiel de l'effort.
 
 >A retenir :
-- Intégration continue : La fonctionnalité est déployée sur un environnement pour une première validation
+- Intégration continue : La fonctionnalité est déployée sur une recette
 - Livraison continue : La fonctionnalité est prête à être livrée en production
 - Déploiement continu : La foncitonnalité est déployée en production
 
-![](images/continuous.jpg)
