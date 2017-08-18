@@ -2,7 +2,7 @@
 
 ## Accélération des rythmes
 Pour répondre à cette explosion de la demande, les entreprises doivent s'adapter.
-Pour rester dans la course, le marketing dirait il faut être présent, visible. En d'autres termes, il faut proposer au client des nouveautés ou des améliorations fréquemment.
+Pour rester dans la course, le _marketing_ dirait il faut être présent, visible. En d'autres termes, il faut proposer au client des nouveautés ou des améliorations fréquemment.
 Du point de vue IT, ça se traduit par toujours plus de livraisons .
 
 - Plus de développement
@@ -11,7 +11,7 @@ Du point de vue IT, ça se traduit par toujours plus de livraisons .
 
 ## Croissance des volumes
 Les besoins des entreprises augmentent considérablement.
-Pour porter toutes ces offres, il faut assurer de nouveaux services, et au bout du compte, il faut aligner des plate-formes.
+Pour porter toutes ces offres, il faut assurer de nouveaux services, et au bout du compte, il faut aligner des plate-formes dûment installées, configurées et maintenues.
 De même la boulimie d'informations de notre monde actuel se traduit par une augmentation de la masse de données.
 
 Ceci provoque une augmentation :
