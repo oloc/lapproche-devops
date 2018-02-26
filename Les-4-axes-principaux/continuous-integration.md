@@ -3,7 +3,7 @@ La compétence irremplaçable du développeur, celle qui doit occuper tout son t
 Nous verrons dans ce chapitre comment oeuvrent les rouages d'une usine de développement.
 
 ## Usine logicielle
-Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièce d'un grand puzzle. A l'instar de la chaîne de montage du monde industriel, l'usine logicielle rassemble et assemble ces éléments pour constituer l'application.
+Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièces d'un grand puzzle. A l'instar de la chaîne de montage du monde industriel, l'usine logicielle rassemble et assemble ces éléments pour constituer l'application.
 
 Et pour cela il lui faut plusieurs outils (entre parenthèses les noms qui reviennent souvent) :
 * Un outil de gestion de version (CVS, Subversion, Mercurial, Git)
@@ -65,3 +65,12 @@ Economiser sur les contrôles qualité est une hypothèque sur l'avenir.
 
 
 ## Services
+
+Apporter des nouvelles fonctionnalités peut être fastidieux. Et ce non pas à cause de la fonctionnalité elle-même mais par le contexte dans lequel on la place. Une telle difficulté est l'apanage des applications tentaculaires. Il est parfois compliqué d'insérer "un petit bout de code" dans une grosse masse.
+
+De même, on peut être confronté à l'effort de faire évoluer une fonction avec tous les effets de bords plus ou moins maîtrisés afférents. Dans les _open-spaces_, on peut entendre le cri de désespoir du développeur : "Mais cette fonction est appelée partout ! Il va falloir tout modifier !?"
+
+Afin de faciliter la livraison de fonctionnalités, il ne faut plus penser son application comme un monolithe de fonctions, mais comme un ensemble de services indépendants les uns des autres. Chaque service sera _de facto_ plus petit que l'application dans son entier, et donc il sera plus aisé de le faire évoluer. De plus les interactions entre les services étant assurés par interface de programmation (plus connu sous le sigle anglais API : _application programming interface_), les effets de bord sont circonscrits et le périmètre est mieux maîtrisé.
+
+>A retenir :
+Repenser son application comme un ensemble de services, c'est faciliter son évolution.
