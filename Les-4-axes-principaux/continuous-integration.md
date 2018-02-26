@@ -74,3 +74,6 @@ Afin de faciliter la livraison de fonctionnalités, il ne faut plus penser son a
 
 >A retenir :
 Repenser son application comme un ensemble de services, c'est faciliter son évolution.
+
+![](images/Services.jpg)
+
