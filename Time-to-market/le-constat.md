@@ -30,9 +30,21 @@ Le terme _Ops_ vient de la contraction du terme anglais  _Operationals_ souvent 
 
 Que l'on observe la DSI d'un grand groupe ou une équipe informatique d'une petite société, les fonctions _Ops_ sont les mêmes. Pour l'un on trouvera plusieurs équipes dédiées à une fonction particulière et dans l'autre c'est fréquemment une poignée de personnes "multi-fonctions", néanmoins ces fonctions sont les mêmes. Citons pêle-mêle, les administrateurs systèmes (Linux, Windows, iSeries, etc.), les administrateurs réseaux, les administrateurs de bases de données, les administrateurs intergiciel (_middleware_), les responsables de la sécurité informatiques, les gestionnaires de stockage, les experts de la virtualisations, et les superviseurs. Et j'en oublie, néanmoins, ça donne une idée de ce que sont les _Ops_.
 
+Il en est de même pour les _Dev_ qui peuvent être séparés en équipes variées comme les développeurs de l'interface  (_frontend_) et ceux développant le serveur (_backend_), on peut ajouter les experts de l'expérience utilisateur, les designers, les ergonomes, et j'en oublie.
+
 Quand toutes ces fonctions sont séparées en autant d'équipes, on parle de **silos**.
 
 Et lors d'un projet informatique, il faut faire appel à tous ces corps de métier oeuvrant tour à tour, de silo en silo.
+
+## Loi de Conway
+
+>Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
+>— Melvin E. Conway
+
+Une traduction pourrait être :
+"_Toute organisation qui conçoit un système (défini plus largement ici que les seuls systèmes d'information) produira inévitablement une conception dont la structure est une copie de la structure de communication de l'organisation._"
+
+Source : http://www.melconway.com/Home/Committees_Paper.html
 
 ## Principale perte de temps
 Comme évoqué plus tôt, la perte de vitesse dans un monde en pleine accélération est le premier motif au changement. Dans la recherche de ce qui provoque cette perte de vitesse, il est pertinent de se pencher sur les processus adoptés dans une DSI. Or lors d'une telle analyse, on constate que les latences ne sont pas dans l'exécution des tâches, mais dans l'attente entre deux tâches, entre deux silos.
@@ -47,7 +59,6 @@ Parfois les attentes des uns ne correspondent pas à ce qui est livré par les a
 >A retenir :
 Cette organisation en silos, génère un climat de tensions entre les équipes, voire de la défiance.
 
-
 ## Perte de qualité et de vélocité
 Le clivage entre les équipes Dev et Ops et/ou dans une organisation en silos, entraînent des frictions voire des crises. Pragmatiquement, ça se traduit par des pertes de temps, des mauvaises livraisons, et à terme à une perte globale de qualité.
 
@@ -61,12 +72,3 @@ Ce qui génère de la perte de vélocité.
 >A retenir :
 Aucun perfectionnement des méthodes en place ne parvient à répondre à cette exigence de vélocité, il faut donc adopter une nouvelle approche !
 
-## Loi de Conway
-
->Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
->— Melvin E. Conway
-
-Une traduction pourrait être :
-"_Toute organisation qui conçoit un système (défini plus largement ici que les seuls systèmes d'information) produira inévitablement une conception dont la structure est une copie de la structure de communication de l'organisation._"
-
-Source : http://www.melconway.com/Home/Committees_Paper.html
