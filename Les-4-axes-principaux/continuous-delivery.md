@@ -85,9 +85,9 @@ L'élaboration d'un _pipeline_ est d'abord pour articuler les tâches d'une équ
 
 Pour reprendre notre exemple, la mise à disposition d'une base de données et d'un serveur d'application peut prendre une douzaine de jours pour une charge de 1 heure et demie. C'est cette compression du temps que l'on cherche à obtenir : passer de 1H30 en 12 jours à 1H30 en 1H30.
 
-![](images/TimeLine.jpg)
+![](../images/TimeLine.jpg)
 
-![](images/TimeLine_2.jpg)
+![](../images/TimeLine_2.jpg)
 
 >A retenir :
 La réduction du _time-to-market_ s'appuie essentiellement sur le _pipeline_.

@@ -1,6 +1,6 @@
 # Une représentation du DevOps
 
-![](images/DevOps_Schema.jpg)
+![](../images/DevOps_Schema.jpg)
 
 Après moult réflexions sur la façon de présenter le DevOps, il m'est apparu qu'il fallait le représenter, qu'il fallait un visuel pour aborder le sujet. Sur ce visuel présenté dans ce chapitre apparaissent les 4 axes principaux du DevOps :
 - Métrologie
@@ -16,7 +16,7 @@ Le premier axe, la métrologie, est en support des 3 autres, comme un socle indi
 >A retenir :
 Pas de DevOps sans métrologie.
 
-### Qualité
+### Qualité
 Le niveau d'exigence des utilisateurs/clients augmente chaque jour. Il est indispensable de livrer de la qualité, et pour s'en assurer, il faut contrôler, mesurer cette qualité.
 
 ### Fiabilité
@@ -43,7 +43,7 @@ Nous reviendrons sur tous ces points dans le chapitre dédié au _Continuous Int
 
 Source: http://www.martinfowler.com/articles/continuousIntegration.html
 
-### L'usine logicielle
+### L'usine logicielle
 Un programme est un assemblage de pièces développées au sein de l'entreprise, par une communauté, par un éditeur. Il est parfois délicat d'opérer à cet assemblage dans une suite d'étapes variées. Ce qu'on appelle **usine logicielle** (_software factory_) est l'ensemble des pratiques qui prennent en charge l'assemblage aussi compliqué qu'il soit. L'objectif est de décharger le développeur de ces tâches pour le sublimer dans ce qu'il fait de mieux : coder.
 
 ### Qualimétrie
@@ -55,7 +55,7 @@ Une application a longtemps été monolithique. Avec l'évolution des besoins, i
 ## _Continuous Delivery_
 La réduction du temps de mise sur le marché, le fameux _time-to-market_ est la clef de voûte du mouvement DevOps. L'automatisation, l'industrialisation, l'orchestration, sont autant d'éléments de réponse qui ne prennent leur sens que dans un pipeline.
 
-### Déploiement
+### Déploiement
 La mise en production est un moment clef dans la vie d'une DSI. Afin d'éviter les oublis, les écarts, les fautes de frappe, il devient vital d'automatiser, de fiabiliser son déploiement. Et ce geste ne devrait plus être stressant, mais naturel.
 
 ### Tests automatiques (Stratégie de tests)
