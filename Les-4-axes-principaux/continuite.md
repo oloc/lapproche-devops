@@ -9,7 +9,7 @@ Pour préciser pour les béotiens en matière de développement logiciel, la mé
 
 L'effet secondaire d'une telle organisation est que les périodes consacrées au développement sont particulièrement chargées. Le développement est souvent un travail intensif et fractionné. Il est fréquent que les développeurs aient le double sentiment suivant les phases d'être exploité et inutile.
 
-![](images/continuous_dev.jpg)
+![](../images/continuous_dev.jpg)
 
 La nouveauté avec les pratiques DevOps est dans la continuité du travail du développeur tout autant que dans la continuité du flux. Le développeur n'a plus à attendre et peut réaliser son travail sans à-coup. Ce qui supprime les sentiments d'exploitation et d'inutilité.
 De plus ce travail régulier permet de réaliser un travail plus rigoureux que lorsqu'il est précipité par un pilotage en silo serré.
@@ -23,7 +23,7 @@ De plus ce travail régulier permet de réaliser un travail plus rigoureux que l
 - Une meilleure productivité des développeurs
 - Une meilleure qualité de développement 
 
-## Intégration, livraison, déploiement
+## Intégration, livraison, déploiement
 
 Si l'adjectif "continu" précise le concept, c'est le nom commun qui définit la finalité. Autrement c'est intégration, livraison et déploiement qui définissent la finalité du processus. Et par finalité j'entends ce que l'on veut faire du code produit.
 
@@ -31,7 +31,7 @@ Si l'adjectif "continu" précise le concept, c'est le nom commun qui définit la
 * Livraison continue : La finalité est d'être fin prêt à livrer soit mettre en production.
 * Déploiement continu : La finalité est de mettre en production tout ce qui passe tous les tests. En clair : aucune intervention humaine entre le moment où le développeur pousse son code et la mise à disposition aux utilisateurs.
 
-![](images/continuous.jpg)
+![](../images/continuous.jpg)
 
 L'effort pour atteindre le déploiement continu à partir de la livraison continue, n'est pas seulement l'automatisation de la mise en production et la suppression du déclenchement, c'est surtout l'ajout d'un asservissement sur la plupart des tâches sensibles, les débrayages de fonctionnalités (_feature toggle_ en anglais), et la conversion des campagnes de tests manuelles en automatisées. Et c'est dans la mise en place de toute cette grille de tests qu'est l'essentiel de l'effort.
 
