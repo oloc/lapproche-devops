@@ -2,7 +2,7 @@
 La compétence irremplaçable du développeur, celle qui doit occuper tout son temps est dans le code et rien d'autre. Toutes les autres tâches nécessaires à l'obtention d'un programme doivent être effectuées par des mécanismes automatisés.
 Nous verrons dans ce chapitre comment oeuvrent les rouages d'une usine de développement.
 
-## Usine logicielle
+## Usine logicielle
 Une application est un ensemble de fonctionnalités qui sont développées comme autant de pièces d'un grand puzzle. A l'instar de la chaîne de montage du monde industriel, l'usine logicielle rassemble et assemble ces éléments pour constituer l'application.
 
 Et pour cela il lui faut plusieurs outils (entre parenthèses les noms qui reviennent souvent) :
@@ -13,7 +13,7 @@ Et pour cela il lui faut plusieurs outils (entre parenthèses les noms qui revie
 * Un outil de tests d'intégration (Junit)
 * Un outil de remontée de qualité de code (SonarQube, Jacoco, PMD)
 
-## Qualimétrie
+## Qualimétrie
 Le maîtrise de la qualité de ce qui est développé peut s'effectuer à deux niveaux :
 
  * En amont au moment de la conception et de la rédaction du code
@@ -75,5 +75,5 @@ Afin de faciliter la livraison de fonctionnalités, il ne faut plus penser son a
 >A retenir :
 Repenser son application comme un ensemble de services, c'est faciliter son évolution.
 
-![](images/Services.jpg)
+![](../images/Services.jpg)
 
